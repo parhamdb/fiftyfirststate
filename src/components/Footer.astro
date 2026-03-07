@@ -1,0 +1,42 @@
+---
+interface Props {
+  lang: 'en' | 'fa';
+}
+
+const { lang } = Astro.props;
+
+const copyright = lang === 'en'
+  ? '2026 Iran51. All rights reserved.'
+  : '۲۰۲۶ ایران۵۱. تمامی حقوق محفوظ است.';
+
+const socialLinks = [
+  { label: 'X', href: '#' },
+  { label: 'Instagram', href: '#' },
+  { label: 'YouTube', href: '#' },
+  { label: 'TikTok', href: '#' },
+];
+---
+
+<footer class="bg-navy text-white py-12 mt-auto">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <p class="font-bold text-lg tracking-wide">IRAN 51</p>
+        <p class="text-sm text-gray-300 mt-1">&copy; {copyright}</p>
+      </div>
+
+      <div class="flex items-center gap-4">
+        {socialLinks.map((link) => (
+          <a
+            href={link.href}
+            class="text-gray-300 hover:text-gold transition-colors text-sm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</footer>

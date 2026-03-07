@@ -1,0 +1,31 @@
+---
+const currentPath = Astro.url.pathname;
+const isFarsi = currentPath.startsWith('/fa/') || currentPath === '/fa';
+
+// Smart URL mapping
+function getTargetUrl(): string {
+  if (isFarsi) {
+    // Farsi -> English mappings
+    if (currentPath === '/fa/' || currentPath === '/fa') return '/en/';
+    if (currentPath.startsWith('/fa/the-process')) return '/en/the-process/';
+    // All other Farsi pages -> English home
+    return '/en/';
+  } else {
+    // English -> Farsi mappings
+    if (currentPath === '/en/' || currentPath === '/en') return '/fa/';
+    if (currentPath.startsWith('/en/the-process')) return '/fa/the-process/';
+    // All other English pages -> Farsi home
+    return '/fa/';
+  }
+}
+
+const targetUrl = getTargetUrl();
+const label = isFarsi ? 'English' : 'فارسی';
+---
+
+<a
+  href={targetUrl}
+  class="inline-block border border-gray-300 rounded px-3 py-1 text-sm hover:bg-gray-100 transition-colors"
+>
+  {label}
+</a>

@@ -1,0 +1,32 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang?: 'en' | 'fa';
+}
+
+const { title, description = '', lang = 'en' } = Astro.props;
+const dir = lang === 'fa' ? 'rtl' : 'ltr';
+const fontClass = lang === 'fa' ? 'font-farsi' : 'font-sans';
+---
+
+<!DOCTYPE html>
+<html lang={lang} dir={dir} class={fontClass}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {description && <meta name="description" content={description} />}
+    <title>{title} | Iran51</title>
+  </head>
+  <body class="bg-white text-navy min-h-screen flex flex-col">
+    <Header lang={lang} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>
