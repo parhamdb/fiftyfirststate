@@ -1,0 +1,27 @@
+---
+interface Props {
+  headline: string;
+  subtitle: string;
+  lang?: 'en' | 'fa';
+}
+
+const { headline, subtitle, lang = 'en' } = Astro.props;
+
+// Highlight "51" in gold
+const highlightedHeadline = headline.replace(
+  /51/g,
+  '<span class="text-gold">51</span>'
+);
+---
+
+<section class="w-full bg-navy py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h1
+      class="text-5xl md:text-7xl font-black tracking-tight text-white"
+      set:html={highlightedHeadline}
+    />
+    <p class="text-xl md:text-2xl text-gray-300 mt-4 max-w-3xl mx-auto">
+      {subtitle}
+    </p>
+  </div>
+</section>

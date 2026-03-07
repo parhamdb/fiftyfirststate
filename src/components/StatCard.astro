@@ -1,0 +1,38 @@
+---
+interface Props {
+  number: string;
+  unit: string;
+  description: string;
+  variant?: 'navy' | 'white';
+}
+
+const { number, unit, description, variant = 'navy' } = Astro.props;
+
+const isNavy = variant === 'navy';
+
+const cardClasses = [
+  'rounded-xl p-8 hover:scale-[1.02] transition-transform',
+  isNavy ? 'bg-navy text-white' : 'bg-white text-navy border border-gray-200',
+].join(' ');
+
+const numberClasses = [
+  'text-4xl md:text-5xl font-black',
+  isNavy ? 'text-gold' : 'text-navy',
+].join(' ');
+
+const unitClasses = [
+  'text-sm uppercase tracking-widest mt-1',
+  isNavy ? 'text-gray-300' : 'text-gray-text',
+].join(' ');
+
+const descriptionClasses = [
+  'text-base mt-4 font-normal',
+  isNavy ? 'text-gray-300' : 'text-gray-text',
+].join(' ');
+---
+
+<div class={cardClasses}>
+  <div class={numberClasses}>{number}</div>
+  <div class={unitClasses}>{unit}</div>
+  <p class={descriptionClasses}>{description}</p>
+</div>

@@ -1,6 +1,99 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import StatCard from '../../components/StatCard.astro';
 ---
 <BaseLayout title="The 51st State" lang="en">
-  <h1 class="text-4xl font-bold p-8">Iran51 - Coming Soon</h1>
+
+  <!-- Section 1: Hero -->
+  <HeroSection
+    headline="The 51st State"
+    subtitle="The strategic, economic, and moral case for Iran joining the United States of America"
+  />
+
+  <!-- Section 2: By the Numbers -->
+  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-3xl font-bold text-navy mb-12 text-center">By the Numbers</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <StatCard
+        number="208.6B"
+        unit="Barrels of Oil"
+        description="3rd largest proven reserves in the world. Under US sovereignty, OPEC loses its leverage forever."
+        variant="navy"
+      />
+      <StatCard
+        number="$27.3T"
+        unit="in Natural Resources"
+        description="Oil, gas, and mineral wealth that offsets the national debt. 68 minerals including rare earths that break China's monopoly."
+        variant="white"
+      />
+      <StatCard
+        number="$20-50B"
+        unit="Saved Per Year"
+        description="The US spends this annually on Gulf military bases to contain Iran. As a state, that spending drops to zero."
+        variant="navy"
+      />
+      <StatCard
+        number="335K"
+        unit="STEM Graduates Per Year"
+        description="5th largest producer of STEM talent globally. 70% of Iran's engineering graduates are women."
+        variant="white"
+      />
+      <StatCard
+        number="90M"
+        unit="New Citizens"
+        description="A consumer market larger than Germany. Massive infrastructure investment. Every dollar stays inside US borders."
+        variant="navy"
+      />
+      <StatCard
+        number="29"
+        unit="UNESCO World Heritage Sites"
+        description="7,000 years of civilization. Persepolis, Isfahan, the tomb of Cyrus the Great. A $10-60B tourism industry."
+        variant="white"
+      />
+    </div>
+  </section>
+
+  <!-- Section 3: Why Now -->
+  <section class="bg-gray-bg py-16 md:py-24">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-8">Why Now</h2>
+      <div class="text-lg text-gray-700 leading-relaxed space-y-6">
+        <p>
+          The Trump administration is actively pursuing territorial expansion, with serious diplomatic efforts aimed at Greenland, Panama, and Canada. The political appetite for growing American sovereignty has not been this strong since the 1950s.
+        </p>
+        <p>
+          The Iranian regime is collapsing. Khamenei was killed on February 28, 2026. Iran's proxy network has been systematically destroyed, and the economy is in freefall. The power vacuum is real and it is growing.
+        </p>
+        <p>
+          According to the GAMAAN survey, 89% of Iranians support a transition to democracy. The Iranian people are not waiting to be liberated — they are demanding it. A population this aligned with democratic values is an extraordinary strategic opportunity.
+        </p>
+        <p>
+          The political window for American expansion is the most open it has been since Alaska and Hawaii joined the union. The question is not whether this window will close — it is whether we act before it does.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Explore -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-8 text-center">Explore</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="/en/why-iran/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
+          <h3 class="text-xl font-bold text-navy">Why Iran?</h3>
+          <p class="text-gray-text mt-2">The strategic and economic case</p>
+        </a>
+        <a href="/en/the-process/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
+          <h3 class="text-xl font-bold text-navy">The Process</h3>
+          <p class="text-gray-text mt-2">How statehood works, legally</p>
+        </a>
+        <a href="/en/our-history/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
+          <h3 class="text-xl font-bold text-navy">Our History</h3>
+          <p class="text-gray-text mt-2">100 years of friendship before 45 years of hostility</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
 </BaseLayout>
