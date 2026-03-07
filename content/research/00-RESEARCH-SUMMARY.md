@@ -2,7 +2,7 @@
 
 ## Overview
 
-This directory contains comprehensive research for the Iran51 campaign -- advocating Iran's admission as the 51st U.S. state. Research conducted March 6, 2026, across 14 research domains.
+This directory contains comprehensive research for the Iran51 campaign -- advocating Iran's admission as the 51st U.S. state. Research conducted March 6, 2026, across 16 research domains.
 
 ## Files
 
@@ -16,7 +16,7 @@ This directory contains comprehensive research for the Iran51 campaign -- advoca
 | [04-regime-collapse.md](04-regime-collapse.md) | Geopolitical moment | Khamenei killed Feb 28, 2026. Proxy network collapsed. Massive protests. 89% of Iranians support democracy. |
 | [05-culture-history.md](05-culture-history.md) | Cultural compatibility | Cyrus Cylinder = first human rights declaration. Jefferson studied Cyrus. Iran's Constitutional Revolution predates most Middle Eastern democracies. Only 40% identify as Muslim. |
 | [06-counterarguments.md](06-counterarguments.md) | Objections & rebuttals | 9 major objections addressed with data: distance, religion, cost, values, precedent, population, language, nuclear, military. |
-| [07-domain-branding.md](07-domain-branding.md) | Domain & social handles | iran51.com taken (Sept 2024). iran51.org likely available. @iran51 likely available on all platforms. Model on PR51st.com. |
+| [07-domain-branding.md](07-domain-branding.md) | Domain & social handles | iran51.com and iran51.us owned. @iran51 likely available on all platforms. Model on PR51st.com. |
 | [08-campaign-strategy.md](08-campaign-strategy.md) | Launch playbook | Start informal, formalize as 501(c)(4). Astro/Hugo + Cloudflare Pages. Action Network for petitions. Bilingual with RTL support. |
 
 ### Round 2: Deep Dives
@@ -34,6 +34,13 @@ This directory contains comprehensive research for the Iran51 campaign -- advoca
 | File | Topic | Key Finding |
 |------|-------|-------------|
 | [14-military-savings.md](14-military-savings.md) | US military spending & savings | US spends $20-50B/year on 40,000-50,000 troops across Gulf bases -- all to contain Iran. Post-9/11 Middle East wars: $8T total. Iran as a state saves $20-50B/year, $600B-$1.5T over a generation. Gulf allies refused base access during 2026 strikes. Iran has 17 air bases, 143 runways, 610K troops ready to integrate. |
+
+### Round 4: Audience-Specific Content
+
+| File | Topic | Key Finding |
+|------|-------|-------------|
+| [15-issues-facing-iranians.md](15-issues-facing-iranians.md) | Issues facing Iranians today | 2,228 executions in 2025 (106% increase). 48% inflation, rial lost 20,000x value. Hijab law: 15 years prison. Death penalty for homosexuality and apostasy. 6M vacant homes while millions homeless. 95% of Lake Urmia gone. IRGC controls 80%+ of privatized assets. Internet freedom score: 2/100. |
+| [16-benefits-for-americans.md](16-benefits-for-americans.md) | How Iran as a state benefits Americans | Energy dominance (250B barrels combined oil). $27.3T in resources vs $38.5T national debt. Breaks China's rare earth monopoly. 90M new consumers = GDP boom. 200+ generic pharma companies = cheaper drugs. 335K STEM grads/year. Permanent nuclear solution. $10-60B tourism industry. Caspian-to-Indian-Ocean strategic corridor. |
 
 ## Top-Line Arguments
 
@@ -64,10 +71,9 @@ This directory contains comprehensive research for the Iran51 campaign -- advoca
 
 ## Immediate Next Steps
 
-1. **Register domains**: iran51.org, iran51.us, 51iran.com (defensively)
+1. **Domains secured**: iran51.com and iran51.us owned. Register iran51.org defensively.
 2. **Claim social handles**: @iran51 on all platforms
-3. **Investigate iran51.com**: Contact owner via GoDaddy
-4. **Build the website**: Astro/Hugo, bilingual, mobile-first
+3. **Build the website**: Astro/Hugo, bilingual, mobile-first
 5. **Create launch content**: 15-20 pieces (articles, infographics, videos)
 6. **Set up infrastructure**: Action Network (petitions/email), Plausible (analytics)
 7. **Draft first op-ed**: Time it to a relevant news moment
