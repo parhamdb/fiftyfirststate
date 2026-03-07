@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import StatCard from '../../components/StatCard.astro';
+---
+<BaseLayout title="مسائل امروز" lang="fa">
+
+  <HeroSection
+    headline="بحران‌های ایران"
+    subtitle="داده‌ها دروغ نمی‌گویند"
+    lang="fa"
+  />
+
+  <!-- 1. بحران اقتصادی -->
+  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-3xl font-bold text-navy mb-12 text-center">بحران اقتصادی</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <StatCard
+        number="٪۴۸"
+        unit="تورم"
+        description="قدرت خرید مردم هر روز کمتر می‌شود."
+        variant="navy"
+      />
+      <StatCard
+        number="۲۰,۰۰۰×"
+        unit="سقوط ارزش ریال"
+        description="ریال ۲۰,۰۰۰ برابر از ارزش خود افتاده است."
+        variant="white"
+      />
+      <StatCard
+        number="٪۳۸.۸"
+        unit="زیر خط فقر"
+        description="بیش از یک سوم مردم ایران زیر خط فقر زندگی می‌کنند."
+        variant="navy"
+      />
+    </div>
+    <div class="prose prose-lg max-w-none text-gray-700">
+      <p>
+        تحریم‌ها اقتصاد ایران را فلج کرده‌اند. فرار مغزها سالانه ۵۰ تا ۷۰ میلیارد دلار هزینه دارد. ۸۰٪ دانشجویان پزشکی می‌خواهند ایران را ترک کنند. سرمایه‌گذاری خارجی تقریباً صفر است و تورم بی‌وقفه قدرت خرید مردم را نابود می‌کند.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. حقوق بشر -->
+  <section class="bg-gray-bg py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">حقوق بشر</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+        <StatCard
+          number="+۲,۲۲۸"
+          unit="اعدام در ۲۰۲۵"
+          description="بیشترین نرخ اعدام سرانه در جهان."
+          variant="navy"
+        />
+        <StatCard
+          number="+۷,۰۰۰"
+          unit="کشته در اعتراضات ژانویه ۲۰۲۶"
+          description="سرکوب خونین معترضان توسط نیروهای امنیتی."
+          variant="navy"
+        />
+      </div>
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p>
+          هزاران زندانی سیاسی در زندان‌های ایران نگهداری می‌شوند. اعتراضات مسالمت‌آمیز با گلوله پاسخ داده می‌شود. شکنجه و اعترافات اجباری رایج است. دادگاه‌های انقلاب بدون هیئت منصفه و بدون وکیل حکم صادر می‌کنند.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. حقوق زنان -->
+  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-3xl font-bold text-navy mb-12 text-center">حقوق زنان</h2>
+    <div class="prose prose-lg max-w-none text-gray-700">
+      <p>
+        در جمهوری اسلامی، شهادت زن نصف مرد ارزش دارد. ارث زن نصف مرد است. قانون حجاب اجباری مجازات تا ۱۵ سال زندان دارد. سن قانونی ازدواج برای دختران ۱۳ سال است. زنان بدون اجازه مرد نمی‌توانند از کشور خارج شوند. حق طلاق عملاً یک‌طرفه است.
+      </p>
+      <p>
+        این قوانین تبعیض‌آمیز نیستند — نظام‌مند هستند. در قانون اساسی نوشته شده‌اند و توسط دادگاه‌ها اجرا می‌شوند.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. آزادی مذهب -->
+  <section class="bg-gray-bg py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">آزادی مذهب</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-right border-collapse">
+          <thead>
+            <tr class="border-b-2 border-navy">
+              <th class="py-4 px-6 text-navy font-bold text-lg">گروه</th>
+              <th class="py-4 px-6 text-navy font-bold text-lg">جمعیت تخمینی</th>
+              <th class="py-4 px-6 text-navy font-bold text-lg">وضعیت</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr class="border-b border-gray-200">
+              <td class="py-4 px-6 font-bold">بهائیان</td>
+              <td class="py-4 px-6">۳۰۰,۰۰۰</td>
+              <td class="py-4 px-6">ممنوعیت تحصیل دانشگاهی، مصادره اموال، زندان</td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="py-4 px-6 font-bold">مسیحیان</td>
+              <td class="py-4 px-6">۳۰۰,۰۰۰ — ۵۰۰,۰۰۰</td>
+              <td class="py-4 px-6">بازداشت، تعطیلی کلیساها، ممنوعیت تبلیغ</td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="py-4 px-6 font-bold">سنی‌ها</td>
+              <td class="py-4 px-6">۵ — ۱۰ میلیون</td>
+              <td class="py-4 px-6">هیچ مسجد سنی در تهران، تبعیض سیستماتیک</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-6 font-bold">زرتشتیان</td>
+              <td class="py-4 px-6">۲۵,۰۰۰</td>
+              <td class="py-4 px-6">محدودیت‌های شدید مذهبی و اجتماعی</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. اقلیت‌های قومی -->
+  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-3xl font-bold text-navy mb-12 text-center">اقلیت‌های قومی</h2>
+    <div class="prose prose-lg max-w-none text-gray-700">
+      <p>
+        ۹۷٪ اعدام‌های سیاسی مربوط به کردها، بلوچ‌ها و عرب‌ها هستند. پس از اعتراضات ژوئن ۲۰۲۵، بیش از ۲۱,۰۰۰ نفر بازداشت شدند. اصل ۱۵ قانون اساسی که حق آموزش به زبان‌های محلی را تضمین می‌کند، هرگز اجرا نشده است.
+      </p>
+      <p>
+        زبان‌های کردی، آذری، بلوچی و عربی در مدارس ممنوع هستند. فعالان حقوق اقلیت‌ها به جرم «محاربه» اعدام می‌شوند.
+      </p>
+    </div>
+  </section>
+
+  <!-- 6. فساد -->
+  <section class="bg-gray-bg py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">فساد</h2>
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <ul class="space-y-4 list-none pr-0">
+          <li class="flex items-start gap-3">
+            <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+            <span>سپاه پاسداران بیش از ۸۰٪ دارایی‌های خصوصی‌سازی‌شده را کنترل می‌کند.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+            <span>دفتر خامنه‌ای ۹۵ میلیارد دلار دارایی را کنترل می‌کرد.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+            <span>رتبه شفافیت: ۱۵۱ از ۱۸۰ کشور</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. محیط زیست -->
+  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-3xl font-bold text-navy mb-12 text-center">محیط زیست</h2>
+    <div class="prose prose-lg max-w-none text-gray-700">
+      <ul class="space-y-4 list-none pr-0">
+        <li class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+          <span>دریاچه ارومیه ۹۵٪ خشک شده است.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+          <span>تهران آلوده‌ترین شهر جهان</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+          <span>بیش از ۴۰ شهر با جیره‌بندی آب مواجه هستند.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA: راه حل وجود دارد -->
+  <section class="bg-navy py-16 md:py-24">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <p class="text-3xl font-bold text-white mb-6">راه حل وجود دارد.</p>
+      <a
+        href="/fa/your-rights/"
+        class="inline-block bg-gold text-navy font-bold text-lg px-8 py-4 rounded-lg hover:bg-gold-light transition-colors"
+      >
+        حقوق شما تحت قانون اساسی آمریکا
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>

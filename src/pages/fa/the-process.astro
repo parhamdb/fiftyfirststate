@@ -1,0 +1,227 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+---
+<BaseLayout title="مسیر" lang="fa">
+
+  <HeroSection
+    headline="مسیر به ایالت شدن"
+    subtitle="از نظر قانونی چگونه ممکن است — و قبلاً هم اتفاق افتاده"
+    lang="fa"
+  />
+
+  <!-- 1. اساس قانونی -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">اساس قانونی</h2>
+      <div class="bg-navy rounded-xl p-8 md:p-12 text-center mb-10">
+        <blockquote class="text-xl md:text-2xl text-white font-serif italic leading-relaxed">
+          «ایالت‌های جدید ممکن است توسط کنگره به این اتحادیه پذیرفته شوند.»
+        </blockquote>
+        <p class="text-gray-300 mt-4 text-sm uppercase tracking-widest">اصل چهارم، بخش سوم — قانون اساسی ایالات متحده</p>
+      </div>
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p>
+          قانون اساسی آمریکا مکانیزمی روشن و آزمایش‌شده برای پذیرش ایالت‌های جدید فراهم کرده است. فقط اکثریت ساده کنگره لازم است. نه اصلاحیه قانون اساسی. نه اکثریت ویژه. این مکانیزم ۳۷ بار از زمان ۱۳ مستعمره اصلی استفاده شده است.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. الگوی تگزاس -->
+  <section class="bg-gray-bg py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">الگوی تگزاس</h2>
+      <p class="text-lg text-gray-700 text-center mb-12 max-w-3xl mx-auto">
+        تگزاس یک جمهوری مستقل و حاکم بود — یک کشور خارجی — قبل از اینکه ایالت شود. این فرآیند کمتر از یک سال طول کشید.
+      </p>
+
+      <!-- Timeline -->
+      <div class="relative max-w-2xl mx-auto">
+        <!-- Vertical line -->
+        <div class="absolute right-4 md:right-1/2 top-0 bottom-0 w-0.5 bg-navy-light transform md:translate-x-0.5"></div>
+
+        <!-- Event 1 -->
+        <div class="relative flex items-start mb-12 md:mb-16">
+          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-white z-10 md:absolute md:right-1/2 md:translate-x-1/2"></div>
+          <div class="mr-8 md:mr-0 md:w-1/2 md:pl-12 md:text-left md:mr-auto">
+            <p class="text-sm font-bold text-gold uppercase tracking-widest">۱ مارس ۱۸۴۵</p>
+            <p class="text-navy font-bold text-lg mt-1">قطعنامه مشترک در کنگره تصویب شد</p>
+            <p class="text-gray-text mt-1">کنگره الحاق تگزاس را با رأی اکثریت ساده در هر دو مجلس تصویب کرد.</p>
+          </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="relative flex items-start mb-12 md:mb-16">
+          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-white z-10 md:absolute md:right-1/2 md:translate-x-1/2"></div>
+          <div class="mr-8 md:mr-0 md:w-1/2 md:pr-12 md:text-right md:ml-auto">
+            <p class="text-sm font-bold text-gold uppercase tracking-widest">۲۳ ژوئن ۱۸۴۵</p>
+            <p class="text-navy font-bold text-lg mt-1">کنگره تگزاس پذیرفت</p>
+            <p class="text-gray-text mt-1">کنگره تگزاس شرایط الحاق پیشنهادی ایالات متحده را پذیرفت.</p>
+          </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="relative flex items-start mb-12 md:mb-16">
+          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-white z-10 md:absolute md:right-1/2 md:translate-x-1/2"></div>
+          <div class="mr-8 md:mr-0 md:w-1/2 md:pl-12 md:text-left md:mr-auto">
+            <p class="text-sm font-bold text-gold uppercase tracking-widest">۱۳ اکتبر ۱۸۴۵</p>
+            <p class="text-navy font-bold text-lg mt-1">رأی مردم تگزاس</p>
+            <p class="text-gray-text mt-1">شهروندان تگزاس با اکثریت قاطع به الحاق و قانون اساسی جدید ایالتی رأی دادند.</p>
+          </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="relative flex items-start mb-12 md:mb-16">
+          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-white z-10 md:absolute md:right-1/2 md:translate-x-1/2"></div>
+          <div class="mr-8 md:mr-0 md:w-1/2 md:pr-12 md:text-right md:ml-auto">
+            <p class="text-sm font-bold text-gold uppercase tracking-widest">۲۹ دسامبر ۱۸۴۵</p>
+            <p class="text-navy font-bold text-lg mt-1">رئیس‌جمهور پالک امضا کرد</p>
+            <p class="text-gray-text mt-1">تگزاس رسماً بیست و هشتمین ایالت ایالات متحده آمریکا شد.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <p class="text-2xl font-bold text-navy">۱۰ ماه از قطعنامه تا ایالت شدن.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. شهروندی -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">شهروندی</h2>
+      <div class="prose prose-lg max-w-none text-gray-700 mb-10">
+        <p>
+          شهروندی آمریکا به معنای حقوق واقعی و قابل اجرا است:
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="border border-gray-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-navy mb-2">پاسپورت آمریکایی</h3>
+          <p class="text-gray-text">آزادی سفر به بیش از ۱۸۰ کشور بدون ویزا یا با ویزای آسان.</p>
+        </div>
+        <div class="border border-gray-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-navy mb-2">حق رأی</h3>
+          <p class="text-gray-text">انتخاب نمایندگان، سناتورها و رئیس‌جمهور. صدای شما شنیده می‌شود.</p>
+        </div>
+        <div class="border border-gray-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-navy mb-2">آزادی رفت و آمد</h3>
+          <p class="text-gray-text">حق زندگی و کار در هر ایالتی. بدون محدودیت.</p>
+        </div>
+        <div class="border border-gray-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-navy mb-2">حقوق مالکیت</h3>
+          <p class="text-gray-text">مالکیت خصوصی تحت حمایت قانون. هیچ‌کس نمی‌تواند اموال شما را مصادره کند.</p>
+        </div>
+        <div class="border border-gray-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-navy mb-2">حفاظت برابر</h3>
+          <p class="text-gray-text">قانون بدون توجه به جنسیت، قومیت یا مذهب از شما محافظت می‌کند.</p>
+        </div>
+        <div class="border border-gray-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-navy mb-2">انتقال تدریجی</h3>
+          <p class="text-gray-text">فرآیند مرحله‌ای با اقامت دائم فوری و مسیر روشن به شهروندی کامل.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. چه چیزی تغییر می‌کند -->
+  <section class="bg-gray-bg py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">چه چیزی تغییر می‌کند</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div class="bg-white rounded-xl p-8 shadow-sm">
+          <h3 class="text-xl font-bold text-navy mb-4 flex items-center gap-2">
+            <span class="text-gold">&#9733;</span> حقوق
+          </h3>
+          <p class="text-gray-700">
+            حمایت‌های قانون اساسی برای همه. آزادی بیان، آزادی مذهب، حق دادرسی عادلانه، حفاظت برابر در برابر قانون.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 shadow-sm">
+          <h3 class="text-xl font-bold text-navy mb-4 flex items-center gap-2">
+            <span class="text-gold">&#9733;</span> اقتصاد
+          </h3>
+          <p class="text-gray-700">
+            تحریم‌ها برداشته می‌شوند. دلار. سرمایه‌گذاری خارجی. دسترسی به بازارهای جهانی. پایان انزوای اقتصادی.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 shadow-sm">
+          <h3 class="text-xl font-bold text-navy mb-4 flex items-center gap-2">
+            <span class="text-gold">&#9733;</span> امنیت
+          </h3>
+          <p class="text-gray-700">
+            حمایت نظامی ایالات متحده. پایان تهدید جنگ. ثبات منطقه‌ای. امنیت واقعی برای مردم.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 shadow-sm">
+          <h3 class="text-xl font-bold text-navy mb-4 flex items-center gap-2">
+            <span class="text-gold">&#9733;</span> عدالت
+          </h3>
+          <p class="text-gray-700">
+            دادگاه‌های مستقل. حاکمیت قانون. پایان دادگاه‌های انقلاب. قضات منصوب بر اساس شایستگی، نه وفاداری سیاسی.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. چه چیزی تغییر نمی‌کند -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">چه چیزی تغییر نمی‌کند</h2>
+      <div class="space-y-8">
+
+        <div class="flex items-start gap-4">
+          <span class="text-gold font-bold text-2xl mt-1 flex-shrink-0">&#10003;</span>
+          <div>
+            <h3 class="text-xl font-bold text-navy">زبان</h3>
+            <p class="text-gray-700 mt-2">
+              فارسی می‌ماند. آمریکا زبان رسمی ندارد. کردی، آذری، بلوچی — همه محافظت می‌شوند. نیومکزیکو امور رسمی را به اسپانیایی و انگلیسی انجام می‌دهد.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <span class="text-gold font-bold text-2xl mt-1 flex-shrink-0">&#10003;</span>
+          <div>
+            <h3 class="text-xl font-bold text-navy">فرهنگ</h3>
+            <p class="text-gray-700 mt-2">
+              نوروز می‌ماند. هویت ایرانی می‌ماند. ایالت شدن هویت شما را پاک نمی‌کند — بلکه آن را تحت حمایت قانون قرار می‌دهد.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <span class="text-gold font-bold text-2xl mt-1 flex-shrink-0">&#10003;</span>
+          <div>
+            <h3 class="text-xl font-bold text-navy">تمامیت ارضی</h3>
+            <p class="text-gray-700 mt-2">
+              هیچ اقلیتی نمی‌خواهد کشوری را ترک کند که با آنها برابر رفتار می‌کند. تمامیت ارضی تحت حمایت ارتش ایالات متحده تضمین می‌شود.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-navy py-16 md:py-24">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <a
+        href="/fa/your-rights/"
+        class="inline-block bg-gold text-navy font-bold text-lg px-8 py-4 rounded-lg hover:bg-gold-light transition-colors"
+      >
+        حقوق شما تحت قانون اساسی
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>
