@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import HeroSection from '../../../components/HeroSection.astro';
+import { getCollection } from 'astro:content';
+
+const allResearch = await getCollection('research');
+
+// Sort by filename (already numbered) and exclude the summary file
+const articles = allResearch
+  .filter(entry => !entry.id.startsWith('00-'))
+  .sort((a, b) => a.id.localeCompare(b.id));
+---
+
+<BaseLayout title="Research Library" lang="en">
+  <HeroSection
+    headline="Research Library"
+    subtitle="Comprehensive, data-driven research across 16 domains"
+  />
+
+  <section class="max-w-3xl mx-auto px-6 py-16 md:py-24">
+    <ul class="space-y-4">
+      {articles.map((article) => (
+        <li>
+          <a
+            href={`/en/research/${article.id}/`}
+            class="block border border-gray-200 rounded-xl p-6 hover:border-gold transition-colors"
+          >
+            <h2 class="text-xl font-bold text-navy">{article.data.title}</h2>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
