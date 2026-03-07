@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import StatCard from '../../components/StatCard.astro';
+---
+<BaseLayout title="ایالت پنجاه و یکم" lang="fa">
+
+  <!-- Section 1: Hero -->
+  <HeroSection
+    headline="قانون اساسی از آن شماست"
+    subtitle="حقوق، آزادی و کرامت — نه وعده‌ای دروغین، بلکه قانونی که ۲۵۰ سال آزمایش شده"
+    lang="fa"
+  />
+
+  <!-- Section 2: Iran by the Numbers -->
+  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-3xl font-bold text-navy mb-12 text-center">وضعیت ایران در یک نگاه</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <StatCard
+        number="+۲,۲۲۸"
+        unit="اعدام در سال ۲۰۲۵"
+        description="بیشترین نرخ اعدام سرانه در جهان. ۱۰۶ درصد افزایش نسبت به سال قبل."
+        variant="navy"
+      />
+      <StatCard
+        number="٪۴۸"
+        unit="تورم"
+        description="ریال ۲۰,۰۰۰ برابر از ارزش خود افتاده. ۳۸.۸٪ مردم زیر خط فقر."
+        variant="white"
+      />
+      <StatCard
+        number="اعدام"
+        unit="مجازات ترک اسلام"
+        description="آزادی مذهبی وجود ندارد. بهائیان، مسیحیان، سنی‌ها و زرتشتیان تحت آزار هستند."
+        variant="navy"
+      />
+      <StatCard
+        number="۲/۱۰۰"
+        unit="امتیاز آزادی اینترنت"
+        description="اینترنت قطع شد. تلگرام، اینستاگرام، یوتیوب و واتساپ مسدود هستند. وی‌پی‌ان غیرقانونی است."
+        variant="white"
+      />
+      <StatCard
+        number="نصف"
+        unit="ارزش شهادت زن"
+        description="شهادت زن نصف مرد. ارث نصف. طلاق یک‌طرفه. حجاب اجباری با مجازات تا ۱۵ سال زندان."
+        variant="navy"
+      />
+      <StatCard
+        number="۶ میلیون"
+        unit="خانه خالی"
+        description="در حالی که میلیون‌ها نفر بی‌خانمان‌اند. ۵۹.۹٪ درآمد تهرانی‌ها صرف مسکن می‌شود."
+        variant="white"
+      />
+    </div>
+  </section>
+
+  <!-- Section 3: What the Constitution Guarantees -->
+  <section class="bg-gray-bg py-16 md:py-24">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-8">قانون اساسی آمریکا چه تضمین می‌کند</h2>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5">&#10003;</span>
+          <span class="text-lg text-gray-700">آزادی بیان، مطبوعات و اجتماعات</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5">&#10003;</span>
+          <span class="text-lg text-gray-700">آزادی مذهب — یا بی‌مذهبی</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5">&#10003;</span>
+          <span class="text-lg text-gray-700">جدایی دین از حکومت</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5">&#10003;</span>
+          <span class="text-lg text-gray-700">بدون زبان رسمی — فارسی، کردی، آذری، بلوچی همه محفوظ‌اند</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5">&#10003;</span>
+          <span class="text-lg text-gray-700">حفاظت برابر در برابر قانون بدون توجه به قومیت</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5">&#10003;</span>
+          <span class="text-lg text-gray-700">تمامیت ارضی تحت حمایت ارتش آمریکا</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5">&#10003;</span>
+          <span class="text-lg text-gray-700">دادگاه‌های مستقل — نه دادگاه‌های انقلاب</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 4: Explore -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-navy mb-8 text-center">بیشتر بخوانید</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="/fa/your-rights/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
+          <h3 class="text-xl font-bold text-navy">حقوق شما</h3>
+          <p class="text-gray-text mt-2">قانون اساسی آمریکا به زبان ساده</p>
+        </a>
+        <a href="/fa/issues-today/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
+          <h3 class="text-xl font-bold text-navy">مسائل امروز</h3>
+          <p class="text-gray-text mt-2">بحران‌هایی که مردم ایران با آن روبرو هستند</p>
+        </a>
+        <a href="/fa/the-process/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
+          <h3 class="text-xl font-bold text-navy">مسیر</h3>
+          <p class="text-gray-text mt-2">چگونه ایالت شدن از نظر قانونی ممکن است</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
