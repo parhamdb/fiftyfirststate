@@ -5,221 +5,471 @@ import HeroSection from '../../components/HeroSection.astro';
 <BaseLayout title="مسیر" lang="fa">
 
   <HeroSection
-    headline="مسیر به ایالت شدن"
-    subtitle="از نظر قانونی چطور ممکن است — و قبلاً هم شده"
+    headline="چگونه یک کشور ایالت می‌شود؟"
+    subtitle="یک راه قانونی روشن وجود دارد — و ۳۷ بار قبلاً انجام شده است"
     lang="fa"
   />
 
-  <!-- 1. اساس قانونی -->
-  <section class="py-16 md:py-24">
+  <!-- 0. ترامپ می‌خواهد گسترش بدهد -->
+  <section class="py-20 md:py-28">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">اساس قانونی</h2>
-      <div class="bg-navy rounded-xl p-8 md:p-12 text-center mb-10">
-        <blockquote class="text-xl md:text-2xl text-white font-serif italic leading-relaxed">
-          «ایالت‌های جدید ممکن است توسط کنگره به این اتحادیه پذیرفته شوند.»
-        </blockquote>
-        <p class="text-gray-300 mt-4 text-sm uppercase tracking-widest">اصل چهارم، بخش سوم — قانون اساسی ایالات متحده</p>
-      </div>
-      <div class="prose prose-lg max-w-none text-gray-700">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">فرصت تاریخی</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">آمریکا دنبال گسترش است</h2>
+      <div class="prose prose-lg max-w-none text-gray-700 mb-10">
         <p>
-          قانون اساسی آمریکا راه روشنی برای اضافه شدن ایالت جدید دارد. فقط رأی اکثریت کنگره لازم است. نه تغییر قانون اساسی. نه رأی ویژه. تا الان ۳۷ بار از این راه استفاده شده.
+          ترامپ علناً می‌گوید آمریکا باید بزرگ‌تر شود. گرینلند، کانادا، کانال پاناما — همه را می‌خواهد. این فقط حرف نیست. مذاکرات دیپلماتیک آغاز شده است. فشار اقتصادی وارد کرده است. حتی استفاده از ارتش را رد نکرده است.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-center">
+          <p class="text-3xl font-black text-gold mb-2">گرینلند</p>
+          <p class="text-gray-300">دانمارک نمی‌فروشد. مردم گرینلند نمی‌خواهند. ترامپ اصرار دارد.</p>
+        </div>
+        <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-center">
+          <p class="text-3xl font-black text-gold mb-2">کانادا</p>
+          <p class="text-gray-300">کانادایی‌ها عصبانی هستند. تعرفه‌ها شروع شده. هیچ‌کس راضی نیست.</p>
+        </div>
+        <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-center">
+          <p class="text-3xl font-black text-gold mb-2">پاناما</p>
+          <p class="text-gray-300">پاناما مقاومت می‌کند. چین درگیر است. اوضاع پیچیده شده است.</p>
+        </div>
+      </div>
+
+      <div class="bg-gold/10 border-2 border-gold rounded-2xl p-8 md:p-10">
+        <blockquote class="text-xl md:text-2xl font-black text-navy leading-relaxed text-center">
+          فرق ایران با همه اینها یک چیز است: <span class="text-gold">ما می‌خواهیم بپیوندیم.</span>
+        </blockquote>
+        <p class="text-gray-700 mt-6 text-center text-lg">
+          گرینلند نمی‌خواهد. کانادا نمی‌خواهد. پاناما نمی‌خواهد. اما ۸۹٪ ایرانی‌ها خواهان تغییر هستند. هیچ ملتی در تاریخ این‌قدر آماده نبوده است.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- 2. الگوی تگزاس -->
-  <section class="bg-gray-bg py-16 md:py-24">
+  <!-- جواب به شک‌ها -->
+  <section class="bg-navy py-20 md:py-28">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">الگوی تگزاس</h2>
-      <p class="text-lg text-gray-700 text-center mb-12 max-w-3xl mx-auto">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">جواب شک‌ها</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">ولی مگر می‌شود؟</h2>
+
+      <div class="space-y-6">
+        <div class="bg-white/5 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-gold mb-3">«ما خیلی دوریم از آمریکا»</h3>
+          <p class="text-gray-300 leading-relaxed">
+            هاوایی ۳,۸۰۰ کیلومتر از نزدیک‌ترین ایالت فاصله دارد — وسط اقیانوس آرام. آلاسکا از بقیه آمریکا جداست و بین کانادا و روسیه قرار دارد. فاصله جغرافیایی هرگز مانع ایالت شدن نبوده است. مهم اراده سیاسی است، نه کیلومتر.
+          </p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-gold mb-3">«ما یک کشور مستقل هستیم»</h3>
+          <p class="text-gray-300 leading-relaxed">
+            تگزاس نیز چنین بود. یک جمهوری مستقل با پرچم، ارتش و رئیس‌جمهور. تصمیم گرفت بپیوندد. مردمش رأی دادند. ۱۰ ماه بعد ایالت شد. استقلال مانع نیست — انتخاب آگاهانه است.
+          </p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-gold mb-3">«کنگره آمریکا قبول نمی‌کند»</h3>
+          <p class="text-gray-300 leading-relaxed">
+            جمهوری‌خواهان اکثریت مجلس نمایندگان و سنا را دارند. ترامپ علناً دنبال گسترش قلمرو است. فقط رأی اکثریت ساده لازم است — نه دو سوم، نه تغییر قانون اساسی. وقتی رئیس‌جمهور بخواهد و کنگره همراهش باشد، قانون تصویب می‌شود. این روند پیش‌تر ۳۷ بار انجام شده است.
+          </p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-gold mb-3">«فرهنگ ما فرق دارد»</h3>
+          <p class="text-gray-300 leading-relaxed">
+            آمریکا از همین تفاوت‌ها ساخته شده. هاوایی پولینزی بود. نیومکزیکو اسپانیایی‌زبان بود. آلاسکا بومیان داشت. هیچ‌کدام فرهنگشان را از دست ندادند — قانون از آن محافظت کرد.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- یک رأی ساده -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">همه‌پرسی</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">یک سؤال. یک رأی. تمام.</h2>
+
+      <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-10 md:p-14 text-center mb-12 shadow-lg">
+        <p class="text-gray-400 text-sm uppercase tracking-widest mb-6">برگه رأی</p>
+        <p class="text-2xl md:text-3xl font-black text-white leading-relaxed mb-8">
+          «آیا موافقید ایران به عنوان ایالتی از ایالات متحده آمریکا پذیرفته شود؟»
+        </p>
+        <div class="flex justify-center gap-8">
+          <span class="bg-green-700 text-white font-black text-xl px-10 py-4 rounded-xl">بله</span>
+          <span class="bg-white/10 text-gray-400 font-black text-xl px-10 py-4 rounded-xl">خیر</span>
+        </div>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p>
+          همین. نه انتخابات چند مرحله‌ای. نه مجلس مؤسسان. نه سال‌ها بحث و جدل. یک سؤال ساده روی یک برگه. مردم رأی می‌دهند. سازمان‌های بین‌المللی نظارت می‌کنند. نتیجه مشخص می‌شود.
+        </p>
+        <p>
+          وقتی تگزاس در ۱۸۴۵ رأی‌گیری کرد، <strong>۹۵٪ مردم گفتند بله</strong>. رأی‌گیری یک روزه بود. هفت ماه بعد ایالت شدند.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- مقایسه: ساختن دموکراسی vs ایالت شدن -->
+  <section class="bg-navy py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">مقایسه</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-6 text-center">دو راه پیش رو</h2>
+      <p class="text-lg text-gray-300 text-center mb-16 max-w-3xl mx-auto">
+        بعد از سقوط رژیم، مردم ایران دو انتخاب دارند: از صفر شروع کنند، یا به سیستمی بپیوندند که ۲۵۰ سال کار می‌کند.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <!-- ساختن از صفر -->
+        <div class="bg-red-900/30 border-2 border-red-800/50 rounded-2xl p-8">
+          <h3 class="text-2xl font-black text-red-300 mb-6">ساختن دموکراسی از صفر</h3>
+          <div class="space-y-4 text-gray-300">
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>نوشتن قانون اساسی: <strong class="text-white">۲ تا ۵ سال</strong> بحث و جدل</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>ساختن دادگاه‌ها، پلیس، ارتش جدید: <strong class="text-white">۱۰+ سال</strong></span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>تثبیت ارز و اقتصاد: <strong class="text-white">شاید هرگز</strong></span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>جذب سرمایه‌گذاری خارجی: <strong class="text-white">۲۰+ سال</strong> تا اعتماد بیاید</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>خطر جنگ داخلی، کودتا، بازگشت دیکتاتوری</span>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-red-800/50">
+            <p class="text-sm text-gray-400 uppercase tracking-widest mb-4">دیگران امتحان کردند — نتیجه چه شد؟</p>
+            <div class="space-y-3 text-sm text-gray-400">
+              <p><strong class="text-red-300">عراق:</strong> ۲۰۰,۰۰۰+ کشته. ۲ تریلیون دلار خرج شد. بعد از ۲۰ سال هنوز ناپایدار.</p>
+              <p><strong class="text-red-300">لیبی:</strong> ۱۴ سال بعد هنوز قانون اساسی ندارد. دو دولت رقیب. انتخابات بارها لغو شده.</p>
+              <p><strong class="text-red-300">مصر:</strong> سه قانون اساسی در سه سال. انقلاب → کودتا در ۲ سال. بازگشت به دیکتاتوری.</p>
+              <p><strong class="text-red-300">افغانستان:</strong> ۲.۳ تریلیون دلار، ۲۰ سال، ۲۰۰,۰۰۰+ کشته. ارتش در چند روز سقوط کرد.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ایالت شدن -->
+        <div class="bg-green-900/30 border-2 border-green-700/50 rounded-2xl p-8">
+          <h3 class="text-2xl font-black text-gold mb-6">پیوستن به آمریکا</h3>
+          <div class="space-y-4 text-gray-300">
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>قانون اساسی آمریکا <strong class="text-white">فوری</strong> اعمال می‌شود</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>دادگاه فدرال، FBI، حقوق مدنی: <strong class="text-white">از روز اول</strong></span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>دلار آمریکا جایگزین ریال: <strong class="text-white">فوری</strong></span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>سرمایه‌گذاری آمریکایی: <strong class="text-white">بلافاصله</strong> شروع می‌شود</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>ارتش آمریکا از مرزها محافظت می‌کند: <strong class="text-white">جنگ داخلی غیرممکن</strong></span>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-green-700/50">
+            <p class="text-sm text-gray-400 uppercase tracking-widest mb-4">از روز اول چه چیزی به دست می‌آید؟</p>
+            <div class="space-y-3 text-sm text-gray-300">
+              <p><strong class="text-gold">بانکداری:</strong> FDIC — سپرده‌ها بیمه می‌شوند. هیچ نهادی نمی‌تواند به سپرده شما دست بزند.</p>
+              <p><strong class="text-gold">بهداشت:</strong> FDA، بیمه Medicare و Medicaid.</p>
+              <p><strong class="text-gold">امنیت:</strong> FBI، دادگاه فدرال، حقوق متمم اول تا بیست و هفتم.</p>
+              <p><strong class="text-gold">زیرساخت:</strong> بزرگراه فدرال، FEMA برای بلایای طبیعی، EPA برای محیط زیست.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gold/10 border-2 border-gold/30 rounded-2xl p-8 md:p-10 text-center">
+        <p class="text-xl md:text-2xl font-black text-white leading-relaxed">
+          ساختن دموکراسی از صفر ۲۰ سال طول می‌کشد — <span class="text-red-300">اگر اصلاً موفق شوید.</span><br/>
+          ایالت شدن ۱۰ ماه طول می‌کشد — <span class="text-gold">و ۳۷ بار موفق بوده.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. اساس قانونی -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">قانون</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">اساس قانونی</h2>
+      <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-10 md:p-14 text-center mb-10 shadow-lg">
+        <blockquote class="text-xl md:text-2xl text-white font-serif italic leading-relaxed">
+          «ایالت‌های جدید ممکن است توسط کنگره به این اتحادیه پذیرفته شوند.»
+        </blockquote>
+        <p class="text-gray-400 mt-4 text-sm uppercase tracking-widest">اصل چهارم، بخش سوم — قانون اساسی ایالات متحده</p>
+      </div>
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p>
+          قانون اساسی آمریکا راه روشنی برای اضافه شدن ایالت جدید دارد. فقط رأی اکثریت کنگره لازم است. نه تغییر قانون اساسی. نه رأی ویژه. تا امروز ۳۷ بار از این راه استفاده شده.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- مردم ایران چه کار باید بکنند -->
+  <section class="bg-navy py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">گام به گام</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">مردم ایران چه باید بکنند؟</h2>
+
+      <div class="space-y-6 mb-12">
+        <div class="flex items-start gap-5 bg-white/5 rounded-2xl p-8">
+          <span class="bg-gold text-navy font-black text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">۱</span>
+          <div>
+            <h3 class="text-xl font-black text-white mb-2">یک همه‌پرسی — یک سؤال</h3>
+            <p class="text-gray-300 leading-relaxed">فقط یک رأی‌گیری ساده. «آیا موافقید ایران به آمریکا بپیوندد؟» بله یا خیر. سازمان‌های بین‌المللی نظارت می‌کنند. نتیجه را کسی نمی‌تواند انکار کند. وقتی تگزاس رأی گرفت، ۹۵٪ گفتند بله.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 bg-white/5 rounded-2xl p-8">
+          <span class="bg-gold text-navy font-black text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">۲</span>
+          <div>
+            <h3 class="text-xl font-black text-white mb-2">قانون اساسی ایالتی</h3>
+            <p class="text-gray-300 leading-relaxed">بسیار ساده‌تر از نوشتن قانون اساسی یک کشور. نیازی نیست ارتش بسازید، سیاست خارجی تعیین کنید، یا سیستم پولی طراحی کنید — همه اینها کار دولت فدرال است. قانون اساسی کالیفرنیا ۶ هفته نوشته شد. هاوایی ۱۰۱ روز.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gold/10 border-2 border-gold/30 rounded-2xl p-8 text-center">
+        <p class="text-xl font-black text-white">همین. دو قدم. بقیه کار آمریکاست.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- آمریکا چه کار باید بکند -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">طرف آمریکا</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">آمریکا چه باید بکند؟</h2>
+
+      <div class="space-y-6 mb-12">
+        <div class="flex items-start gap-5 border-2 border-gray-200 rounded-2xl p-8">
+          <span class="bg-navy text-gold font-black text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">۱</span>
+          <div>
+            <h3 class="text-xl font-black text-navy mb-2">رئیس‌جمهور پیشنهاد می‌دهد</h3>
+            <p class="text-gray-700 leading-relaxed">ترامپ می‌تواند لایحه پذیرش ایران را به کنگره بفرستد. دقیقاً همان کاری که رئیس‌جمهور تایلر برای تگزاس کرد.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 border-2 border-gray-200 rounded-2xl p-8">
+          <span class="bg-navy text-gold font-black text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">۲</span>
+          <div>
+            <h3 class="text-xl font-black text-navy mb-2">کنگره رأی می‌دهد</h3>
+            <p class="text-gray-700 leading-relaxed">فقط رأی اکثریت ساده لازم است. ۲۱۸ نفر در مجلس نمایندگان، ۵۱ نفر در سنا. جمهوری‌خواهان هر دو را دارند. وقتی رئیس‌جمهور بخواهد، حزبش همراهی می‌کند.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 border-2 border-gray-200 rounded-2xl p-8">
+          <span class="bg-navy text-gold font-black text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">۳</span>
+          <div>
+            <h3 class="text-xl font-black text-navy mb-2">رئیس‌جمهور امضا می‌کند</h3>
+            <p class="text-gray-700 leading-relaxed">قانون تأیید می‌شود. ایران رسماً ایالت می‌شود. تمام. برای تگزاس کل این فرآیند ۱۰ ماه طول کشید.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 md:p-10">
+        <p class="text-lg text-gray-300 leading-relaxed text-center">
+          هیچ مرحله‌ای از این فرآیند بی‌سابقه نیست. هر قدمش قبلاً انجام شده. فقط باید <span class="text-gold font-bold">اراده</span> وجود داشته باشد — و اراده از هر دو طرف هست.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- الگوی تگزاس -->
+  <section class="bg-navy py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">سابقه</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">الگوی تگزاس</h2>
+      <p class="text-lg text-gray-300 text-center mb-16 max-w-3xl mx-auto">
         تگزاس یک کشور مستقل بود — درست مثل ایران. به آمریکا ملحق شد و کل فرآیند کمتر از یک سال طول کشید.
       </p>
 
       <!-- Timeline -->
       <div class="relative max-w-2xl mx-auto">
-        <!-- Vertical line -->
-        <div class="absolute right-4 md:right-1/2 top-0 bottom-0 w-0.5 bg-navy-light transform md:translate-x-0.5"></div>
+        <div class="absolute right-4 md:right-1/2 top-0 bottom-0 w-0.5 bg-gold/30 transform md:translate-x-0.5"></div>
 
-        <!-- Event 1 -->
         <div class="relative flex items-start mb-12 md:mb-16">
-          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-white z-10 md:absolute md:right-1/2 md:translate-x-1/2"></div>
+          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-navy z-10 md:absolute md:right-1/2 md:translate-x-1/2 shadow-lg shadow-gold/30"></div>
           <div class="mr-8 md:mr-0 md:w-1/2 md:pl-12 md:text-left md:mr-auto">
             <p class="text-sm font-bold text-gold uppercase tracking-widest">۱ مارس ۱۸۴۵</p>
-            <p class="text-navy font-bold text-lg mt-1">قطعنامه مشترک در کنگره تصویب شد</p>
-            <p class="text-gray-text mt-1">کنگره با رأی اکثریت ساده پیوستن تگزاس را تصویب کرد.</p>
+            <p class="text-white font-bold text-lg mt-1">قطعنامه مشترک در کنگره تصویب شد</p>
+            <p class="text-gray-400 mt-1">کنگره با رأی اکثریت ساده پیوستن تگزاس را تصویب کرد.</p>
           </div>
         </div>
 
-        <!-- Event 2 -->
         <div class="relative flex items-start mb-12 md:mb-16">
-          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-white z-10 md:absolute md:right-1/2 md:translate-x-1/2"></div>
+          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-navy z-10 md:absolute md:right-1/2 md:translate-x-1/2 shadow-lg shadow-gold/30"></div>
           <div class="mr-8 md:mr-0 md:w-1/2 md:pr-12 md:text-right md:ml-auto">
             <p class="text-sm font-bold text-gold uppercase tracking-widest">۲۳ ژوئن ۱۸۴۵</p>
-            <p class="text-navy font-bold text-lg mt-1">کنگره تگزاس پذیرفت</p>
-            <p class="text-gray-text mt-1">مجلس تگزاس پیشنهاد آمریکا را قبول کرد.</p>
+            <p class="text-white font-bold text-lg mt-1">کنگره تگزاس پذیرفت</p>
+            <p class="text-gray-400 mt-1">مجلس تگزاس پیشنهاد آمریکا را قبول کرد.</p>
           </div>
         </div>
 
-        <!-- Event 3 -->
         <div class="relative flex items-start mb-12 md:mb-16">
-          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-white z-10 md:absolute md:right-1/2 md:translate-x-1/2"></div>
+          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-navy z-10 md:absolute md:right-1/2 md:translate-x-1/2 shadow-lg shadow-gold/30"></div>
           <div class="mr-8 md:mr-0 md:w-1/2 md:pl-12 md:text-left md:mr-auto">
             <p class="text-sm font-bold text-gold uppercase tracking-widest">۱۳ اکتبر ۱۸۴۵</p>
-            <p class="text-navy font-bold text-lg mt-1">رأی مردم تگزاس</p>
-            <p class="text-gray-text mt-1">مردم تگزاس با اکثریت بالا به پیوستن رأی دادند.</p>
+            <p class="text-white font-bold text-lg mt-1">رأی مردم تگزاس</p>
+            <p class="text-gray-400 mt-1">مردم تگزاس با اکثریت بالا به پیوستن رأی دادند.</p>
           </div>
         </div>
 
-        <!-- Event 4 -->
         <div class="relative flex items-start mb-12 md:mb-16">
-          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-white z-10 md:absolute md:right-1/2 md:translate-x-1/2"></div>
+          <div class="order-first flex-shrink-0 w-8 h-8 bg-gold rounded-full border-4 border-navy z-10 md:absolute md:right-1/2 md:translate-x-1/2 shadow-lg shadow-gold/30"></div>
           <div class="mr-8 md:mr-0 md:w-1/2 md:pr-12 md:text-right md:ml-auto">
             <p class="text-sm font-bold text-gold uppercase tracking-widest">۲۹ دسامبر ۱۸۴۵</p>
-            <p class="text-navy font-bold text-lg mt-1">رئیس‌جمهور پالک امضا کرد</p>
-            <p class="text-gray-text mt-1">تگزاس رسماً بیست و هشتمین ایالت ایالات متحده آمریکا شد.</p>
+            <p class="text-white font-bold text-lg mt-1">رئیس‌جمهور پالک امضا کرد</p>
+            <p class="text-gray-400 mt-1">تگزاس رسماً بیست و هشتمین ایالت ایالات متحده آمریکا شد.</p>
           </div>
         </div>
       </div>
 
       <div class="text-center mt-8">
-        <p class="text-2xl font-bold text-navy">۱۰ ماه از قطعنامه تا ایالت شدن.</p>
+        <p class="text-3xl font-black text-gold">۱۰ ماه از قطعنامه تا ایالت شدن.</p>
       </div>
     </div>
   </section>
 
-  <!-- 3. شهروندی -->
-  <section class="py-16 md:py-24">
+  <!-- شهروندی -->
+  <section class="py-20 md:py-28">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">شهروندی</h2>
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">حقوق</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">شهروندی</h2>
       <div class="prose prose-lg max-w-none text-gray-700 mb-10">
         <p>
           شهروندی آمریکا یعنی حقوق واقعی — نه روی کاغذ:
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="border border-gray-200 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-navy mb-2">پاسپورت آمریکایی</h3>
+        <div class="border-2 border-gray-200 rounded-2xl p-6 hover:border-gold transition-colors">
+          <h3 class="text-lg font-black text-navy mb-2">پاسپورت آمریکایی</h3>
           <p class="text-gray-text">سفر بدون ویزا به بیش از ۱۸۰ کشور.</p>
         </div>
-        <div class="border border-gray-200 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-navy mb-2">حق رأی</h3>
-          <p class="text-gray-text">خودت نماینده، سناتور و رئیس‌جمهور انتخاب می‌کنی.</p>
+        <div class="border-2 border-gray-200 rounded-2xl p-6 hover:border-gold transition-colors">
+          <h3 class="text-lg font-black text-navy mb-2">حق رأی</h3>
+          <p class="text-gray-text">خودتان نماینده، سناتور و رئیس‌جمهور انتخاب می‌کنید.</p>
         </div>
-        <div class="border border-gray-200 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-navy mb-2">آزادی رفت و آمد</h3>
-          <p class="text-gray-text">هر جای آمریکا می‌خواهی زندگی و کار کن. بدون محدودیت.</p>
+        <div class="border-2 border-gray-200 rounded-2xl p-6 hover:border-gold transition-colors">
+          <h3 class="text-lg font-black text-navy mb-2">آزادی رفت و آمد</h3>
+          <p class="text-gray-text">هر جای آمریکا می‌خواهید زندگی و کار کنید. بدون محدودیت.</p>
         </div>
-        <div class="border border-gray-200 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-navy mb-2">حقوق مالکیت</h3>
-          <p class="text-gray-text">مال تو مال توست. کسی نمی‌تواند مصادره کند.</p>
+        <div class="border-2 border-gray-200 rounded-2xl p-6 hover:border-gold transition-colors">
+          <h3 class="text-lg font-black text-navy mb-2">حقوق مالکیت</h3>
+          <p class="text-gray-text">دارایی شما متعلق به شماست. کسی نمی‌تواند مصادره کند.</p>
         </div>
-        <div class="border border-gray-200 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-navy mb-2">حفاظت برابر</h3>
+        <div class="border-2 border-gray-200 rounded-2xl p-6 hover:border-gold transition-colors">
+          <h3 class="text-lg font-black text-navy mb-2">حفاظت برابر</h3>
           <p class="text-gray-text">قانون فرقی بین زن و مرد، کُرد و فارس، مسلمان و بهائی نمی‌گذارد.</p>
         </div>
-        <div class="border border-gray-200 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-navy mb-2">انتقال تدریجی</h3>
+        <div class="border-2 border-gray-200 rounded-2xl p-6 hover:border-gold transition-colors">
+          <h3 class="text-lg font-black text-navy mb-2">انتقال تدریجی</h3>
           <p class="text-gray-text">اول اقامت دائم، بعد مسیر روشن به شهروندی کامل.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. چه چیزی تغییر می‌کند -->
-  <section class="bg-gray-bg py-16 md:py-24">
+  <!-- چه چیزی تغییر می‌کند -->
+  <section class="bg-navy py-20 md:py-28">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">چه چیزی تغییر می‌کند</h2>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">چه چیزی تغییر می‌کند</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-        <div class="bg-white rounded-xl p-8 shadow-sm">
-          <h3 class="text-xl font-bold text-navy mb-4 flex items-center gap-2">
-            <span class="text-gold">&#9733;</span> حقوق
+        <div class="bg-white/5 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-gold mb-4 flex items-center gap-2">
+            <span>&#9733;</span> حقوق
           </h3>
-          <p class="text-gray-700">
+          <p class="text-gray-300 leading-relaxed">
             آزادی بیان. آزادی مذهب. دادگاه عادلانه. قانون برای همه یکسان.
           </p>
         </div>
-
-        <div class="bg-white rounded-xl p-8 shadow-sm">
-          <h3 class="text-xl font-bold text-navy mb-4 flex items-center gap-2">
-            <span class="text-gold">&#9733;</span> اقتصاد
+        <div class="bg-white/5 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-gold mb-4 flex items-center gap-2">
+            <span>&#9733;</span> اقتصاد
           </h3>
-          <p class="text-gray-700">
+          <p class="text-gray-300 leading-relaxed">
             تحریم‌ها یک‌شبه برداشته می‌شوند. دلار جای ریال. سرمایه‌گذاری خارجی سرازیر می‌شود. دیگر از دنیا جدا نیستیم.
           </p>
         </div>
-
-        <div class="bg-white rounded-xl p-8 shadow-sm">
-          <h3 class="text-xl font-bold text-navy mb-4 flex items-center gap-2">
-            <span class="text-gold">&#9733;</span> امنیت
+        <div class="bg-white/5 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-gold mb-4 flex items-center gap-2">
+            <span>&#9733;</span> امنیت
           </h3>
-          <p class="text-gray-700">
+          <p class="text-gray-300 leading-relaxed">
             ارتش آمریکا از مرزهای ایران محافظت می‌کند. دیگر تهدید جنگ نیست. امنیت واقعی.
           </p>
         </div>
-
-        <div class="bg-white rounded-xl p-8 shadow-sm">
-          <h3 class="text-xl font-bold text-navy mb-4 flex items-center gap-2">
-            <span class="text-gold">&#9733;</span> عدالت
+        <div class="bg-white/5 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-gold mb-4 flex items-center gap-2">
+            <span>&#9733;</span> عدالت
           </h3>
-          <p class="text-gray-700">
+          <p class="text-gray-300 leading-relaxed">
             دادگاه مستقل. قاضی بر اساس تخصص انتخاب می‌شود، نه وفاداری. دادگاه انقلاب تعطیل.
           </p>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- 5. چه چیزی تغییر نمی‌کند -->
-  <section class="py-16 md:py-24">
+  <!-- چه چیزی تغییر نمی‌کند -->
+  <section class="py-20 md:py-28">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">چه چیزی تغییر نمی‌کند</h2>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">چه چیزی تغییر نمی‌کند</h2>
       <div class="space-y-8">
-
-        <div class="flex items-start gap-4">
-          <span class="text-gold font-bold text-2xl mt-1 flex-shrink-0">&#10003;</span>
+        <div class="flex items-start gap-4 border-2 border-gray-200 rounded-2xl p-6">
+          <span class="text-gold font-black text-2xl mt-1 flex-shrink-0">&#10003;</span>
           <div>
-            <h3 class="text-xl font-bold text-navy">زبان</h3>
+            <h3 class="text-xl font-black text-navy">زبان</h3>
             <p class="text-gray-700 mt-2">
-              فارسی می‌ماند. آمریکا زبان رسمی ندارد. کردی، ترکی، بلوچی — همه آزادند. ایالت نیومکزیکو الان هم به اسپانیایی اداره می‌شود.
+              فارسی می‌ماند. آمریکا زبان رسمی ندارد. کردی، ترکی، بلوچی — همه آزادند. ایالت نیومکزیکو هم‌اکنون نیز به اسپانیایی اداره می‌شود.
             </p>
           </div>
         </div>
-
-        <div class="flex items-start gap-4">
-          <span class="text-gold font-bold text-2xl mt-1 flex-shrink-0">&#10003;</span>
+        <div class="flex items-start gap-4 border-2 border-gray-200 rounded-2xl p-6">
+          <span class="text-gold font-black text-2xl mt-1 flex-shrink-0">&#10003;</span>
           <div>
-            <h3 class="text-xl font-bold text-navy">فرهنگ</h3>
+            <h3 class="text-xl font-black text-navy">فرهنگ</h3>
             <p class="text-gray-700 mt-2">
-              نوروز می‌ماند. ایرانی بودن می‌ماند. ایالت شدن هویتت را پاک نمی‌کند — بلکه قانون ازش محافظت می‌کند.
+              نوروز می‌ماند. ایرانی بودن می‌ماند. ایالت شدن هویت شما را پاک نمی‌کند — بلکه قانون از آن محافظت می‌کند.
             </p>
           </div>
         </div>
-
-        <div class="flex items-start gap-4">
-          <span class="text-gold font-bold text-2xl mt-1 flex-shrink-0">&#10003;</span>
+        <div class="flex items-start gap-4 border-2 border-gray-200 rounded-2xl p-6">
+          <span class="text-gold font-black text-2xl mt-1 flex-shrink-0">&#10003;</span>
           <div>
-            <h3 class="text-xl font-bold text-navy">تمامیت ارضی</h3>
+            <h3 class="text-xl font-black text-navy">تمامیت ارضی</h3>
             <p class="text-gray-700 mt-2">
               وقتی همه حقوق برابر دارند، کسی نمی‌خواهد جدا شود. مرزهای ایران زیر حمایت ارتش آمریکا امن می‌ماند.
             </p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="bg-navy py-16 md:py-24">
+  <section class="bg-navy py-20 md:py-28">
     <div class="max-w-3xl mx-auto px-6 text-center">
       <a
-        href="/fa/your-rights/"
-        class="inline-block bg-gold text-navy font-bold text-lg px-8 py-4 rounded-lg hover:bg-gold-light transition-colors"
+        href="/fa/faq/"
+        class="inline-block bg-gold text-navy font-black text-lg px-10 py-5 rounded-xl hover:bg-gold-light transition-colors shadow-lg shadow-gold/20"
       >
-        حقوق شما تحت قانون اساسی
+        پرسش و پاسخ
       </a>
     </div>
   </section>

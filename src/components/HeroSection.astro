@@ -14,14 +14,22 @@ const highlightedHeadline = headline.replace(
 );
 ---
 
-<section class="w-full bg-navy py-24 md:py-32">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h1
-      class="text-5xl md:text-7xl font-black tracking-tight text-white"
-      set:html={highlightedHeadline}
-    />
-    <p class="text-xl md:text-2xl text-gray-300 mt-4 max-w-3xl mx-auto">
-      {subtitle}
-    </p>
+<section class="w-full bg-navy relative overflow-hidden">
+  <!-- Gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light/30 to-navy"></div>
+  <!-- Subtle star pattern -->
+  <div class="absolute top-8 right-12 text-gold/10 text-[200px] font-black select-none pointer-events-none leading-none" aria-hidden="true">&#9733;</div>
+  <div class="relative z-10 py-32 md:py-44">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1
+        class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight text-white leading-[1.1]"
+        set:html={highlightedHeadline}
+      />
+      <p class="text-xl md:text-2xl text-gray-200 mt-6 max-w-3xl mx-auto leading-relaxed">
+        {subtitle}
+      </p>
+    </div>
   </div>
+  <!-- Bottom fade -->
+  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
 </section>

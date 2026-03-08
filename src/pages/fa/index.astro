@@ -1,113 +1,283 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import HeroSection from '../../components/HeroSection.astro';
-import StatCard from '../../components/StatCard.astro';
 ---
 <BaseLayout title="ایالت پنجاه و یکم" lang="fa">
 
   <!-- Section 1: Hero -->
   <HeroSection
-    headline="قانون اساسی از آن شماست"
-    subtitle="حقوق، آزادی و احترام — نه وعده، بلکه قانون. ۲۵۰ سال امتحانش را پس داده."
+    headline="ایران، ایالت ۵۱ آمریکا"
+    subtitle="یک پیشنهاد جدی بر پایه قانون اساسی آمریکا، داده‌های اقتصادی و سابقه تاریخی ۳۷ سرزمینی که پیش از این به اتحاد پیوسته‌اند."
     lang="fa"
   />
 
-  <!-- Section 2: Iran by the Numbers -->
-  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
-    <h2 class="text-3xl font-bold text-navy mb-12 text-center">وضعیت ایران در یک نگاه</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <StatCard
-        number="+۲,۲۲۸"
-        unit="اعدام در سال ۲۰۲۵"
-        description="بالاترین نرخ اعدام در جهان. دو برابر سال قبل."
-        variant="navy"
-      />
-      <StatCard
-        number="٪۴۸"
-        unit="تورم"
-        description="ارزش ریال ۲۰ هزار برابر کمتر شده. از هر ۳ ایرانی، بیش از ۱ نفر زیر خط فقر است."
-        variant="white"
-      />
-      <StatCard
-        number="اعدام"
-        unit="مجازات ترک اسلام"
-        description="آزادی مذهبی وجود ندارد. بهائی‌ها، مسیحی‌ها، سنی‌ها و زرتشتی‌ها سرکوب می‌شوند."
-        variant="navy"
-      />
-      <StatCard
-        number="۲/۱۰۰"
-        unit="امتیاز آزادی اینترنت"
-        description="اینترنت قطع شد. تلگرام، اینستاگرام، یوتیوب، واتساپ فیلتر هستند. استفاده از VPN جرم است."
-        variant="white"
-      />
-      <StatCard
-        number="نصف"
-        unit="ارزش شهادت زن"
-        description="شهادت زن نصف مرد. ارث نصف. مرد یک‌طرفه طلاق می‌دهد. بی‌حجابی تا ۱۵ سال زندان دارد."
-        variant="navy"
-      />
-      <StatCard
-        number="۶ میلیون"
-        unit="خانه خالی"
-        description="میلیون‌ها نفر بی‌خانمان‌اند. ۶۰٪ درآمد تهرانی‌ها خرج اجاره می‌شود."
-        variant="white"
-      />
+  <!-- Credibility Bar -->
+  <div class="bg-gray-50 border-b border-gray-200 py-4 px-6">
+    <p class="text-center text-sm text-gray-500 max-w-3xl mx-auto">
+      این طنز نیست. بررسی جدی پیوستن ایران به ایالات متحده — بر اساس قانون اساسی آمریکا، داده‌های اقتصادی و سابقه تاریخی ۳۷ ایالت پیشین.
+    </p>
+  </div>
+
+  <!-- English CTA Banner -->
+  <a href="/en/" class="block bg-gradient-to-l from-navy to-navy-light py-4 px-6 text-center hover:from-navy-light hover:to-navy transition-all">
+    <span class="text-gold font-black text-lg">Read in English?</span>
+    <span class="text-white font-bold text-lg mx-2">—</span>
+    <span class="text-white font-semibold">Switch to the English page</span>
+    <span class="text-gold ml-2">&#8592;</span>
+  </a>
+
+  <!-- Section 2: What You Get -->
+  <section class="bg-navy py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">از روز اول</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">چه چیزی به دست می‌آورید</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-2xl mt-0.5 flex-shrink-0">&#10003;</span>
+          <span class="text-lg text-gray-200">آزادی بیان — هر چه بخواهید بگویید، بنویسید و اعتراض کنید</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-2xl mt-0.5 flex-shrink-0">&#10003;</span>
+          <span class="text-lg text-gray-200">آزادی مذهب — هر دینی که بخواهید، یا هیچ دینی</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-2xl mt-0.5 flex-shrink-0">&#10003;</span>
+          <span class="text-lg text-gray-200">پاسپورت آمریکایی — سفر بدون ویزا به بیش از ۱۸۰ کشور</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-2xl mt-0.5 flex-shrink-0">&#10003;</span>
+          <span class="text-lg text-gray-200">دلار به جای ریال — پایان تورم و سقوط ارزش پول</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-2xl mt-0.5 flex-shrink-0">&#10003;</span>
+          <span class="text-lg text-gray-200">اینترنت آزاد — بدون فیلتر، بدون VPN، بدون سانسور</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-2xl mt-0.5 flex-shrink-0">&#10003;</span>
+          <span class="text-lg text-gray-200">زن و مرد برابر — در دادگاه، در ارث، در همه چیز</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-2xl mt-0.5 flex-shrink-0">&#10003;</span>
+          <span class="text-lg text-gray-200">فارسی، کردی، ترکی، بلوچی — همه زبان‌ها آزادند</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-2xl mt-0.5 flex-shrink-0">&#10003;</span>
+          <span class="text-lg text-gray-200">ارتش آمریکا از مرزهای ایران محافظت می‌کند</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-2xl mt-0.5 flex-shrink-0">&#10003;</span>
+          <span class="text-lg text-gray-200">تحریم‌ها یک‌شبه برداشته می‌شوند — سرمایه‌گذاری سرازیر می‌شود</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-2xl mt-0.5 flex-shrink-0">&#10003;</span>
+          <span class="text-lg text-gray-200">دادگاه مستقل با هیئت منصفه — نه دادگاه انقلاب</span>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="/fa/your-rights/" class="inline-block border-2 border-gold text-gold font-black text-lg px-8 py-4 rounded-xl hover:bg-gold hover:text-navy transition-colors">
+          همه حقوق شما ←
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Section 3: What the Constitution Guarantees -->
-  <section class="bg-gray-bg py-16 md:py-24">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-8">قانون اساسی آمریکا چه چیزی به شما می‌دهد</h2>
-      <ul class="space-y-4">
-        <li class="flex items-start gap-3">
-          <span class="text-gold text-xl mt-0.5">&#10003;</span>
-          <span class="text-lg text-gray-700">هر چه می‌خواهید بگویید، بنویسید، و اعتراض کنید</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-gold text-xl mt-0.5">&#10003;</span>
-          <span class="text-lg text-gray-700">هر دینی بخواهید داشته باشید — یا هیچ دینی</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-gold text-xl mt-0.5">&#10003;</span>
-          <span class="text-lg text-gray-700">جدایی دین از حکومت</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-gold text-xl mt-0.5">&#10003;</span>
-          <span class="text-lg text-gray-700">زبان رسمی وجود ندارد — فارسی، کردی، ترکی، بلوچی همه آزادند</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-gold text-xl mt-0.5">&#10003;</span>
-          <span class="text-lg text-gray-700">قانون برای همه یکسان است — فرقی نمی‌کند کُرد باشی یا فارس، عرب باشی یا بلوچ</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-gold text-xl mt-0.5">&#10003;</span>
-          <span class="text-lg text-gray-700">مرزهای ایران زیر چتر ارتش آمریکا — هیچ کشوری جرأت تجاوز ندارد</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-gold text-xl mt-0.5">&#10003;</span>
-          <span class="text-lg text-gray-700">دادگاه مستقل با هیئت منصفه — نه دادگاه انقلاب</span>
-        </li>
-      </ul>
+  <!-- Section 3: It's Possible -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">سابقه تاریخی</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">این کار شدنی است</h2>
+
+      <div class="space-y-6 mb-12">
+        <div class="flex items-start gap-5 border-2 border-gray-200 rounded-2xl p-6 md:p-8">
+          <span class="bg-navy text-gold font-black text-lg w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">۱</span>
+          <div>
+            <h3 class="text-xl font-black text-navy">تگزاس — جمهوری مستقل بود</h3>
+            <p class="text-gray-700 mt-1">۱۰ سال کشور مستقل بود. در سال ۱۸۴۵ به آمریکا پیوست. کل فرآیند <span class="font-bold text-navy">۱۰ ماه</span> طول کشید.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 border-2 border-gray-200 rounded-2xl p-6 md:p-8">
+          <span class="bg-navy text-gold font-black text-lg w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">۲</span>
+          <div>
+            <h3 class="text-xl font-black text-navy">هاوایی — پادشاهی مستقل بود</h3>
+            <p class="text-gray-700 mt-1">نزدیک به یک قرن پادشاهی مستقل بود. ۲,۴۰۰ مایل از سرزمین اصلی فاصله دارد. در سال ۱۹۵۹ ایالت شد.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 border-2 border-gray-200 rounded-2xl p-6 md:p-8">
+          <span class="bg-navy text-gold font-black text-lg w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">۳</span>
+          <div>
+            <h3 class="text-xl font-black text-navy">آلمان و ژاپن — از دشمن به متحد</h3>
+            <p class="text-gray-700 mt-1">با سرمایه‌گذاری آمریکا به سومین و چهارمین اقتصاد بزرگ جهان تبدیل شدند. <span class="font-bold text-navy">هیچ‌کدام به اندازه ایران منابع طبیعی نداشتند.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 md:p-10 text-center">
+        <p class="text-3xl md:text-4xl font-black text-gold mb-4">۳۷ سرزمین</p>
+        <p class="text-xl text-white">تاکنون به ایالات متحده پیوسته‌اند. مسیر قانونی مشخص است و ۳۷ بار آزموده شده.</p>
+        <a href="/fa/the-process/" class="inline-block mt-8 bg-gold text-navy font-black text-lg px-10 py-5 rounded-xl hover:bg-gold-light transition-colors shadow-lg shadow-gold/20">
+          مسیر ایالت شدن چگونه است؟
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Section 4: Explore -->
-  <section class="py-16 md:py-24">
+  <!-- Section 4: Why Not Go It Alone -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">مقایسه</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-6 text-center">چرا نه انقلاب، نه رژیم‌چنج؟</h2>
+      <p class="text-lg text-gray-500 text-center max-w-3xl mx-auto mb-16">ایران یک بار انقلاب کرد — نتیجه‌اش جمهوری اسلامی شد. عراق، لیبی و افغانستان رژیم‌چنج شدند — هر سه شکست خوردند. ساختن دموکراسی از صفر تقریباً هرگز موفق نبوده.</p>
+
+      <!-- Comparison -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <!-- Sovereign path -->
+        <div class="bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-200 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-red-800 mb-6">مسیر استقلال و نهادسازی</h3>
+          <div class="space-y-4 text-red-900">
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>نوشتن قانون اساسی، ساختن ارتش، دادگاه، بانک مرکزی — <strong>حداقل ۱۰ تا ۲۰ سال</strong></span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>خطر جنگ داخلی بین گروه‌های مسلح — مثل عراق، لیبی، سوریه</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>خطر تجزیه کشور — کردستان، بلوچستان، آذربایجان هر کدام جداگانه</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>خطر حمله همسایگان — ترکیه، عراق، پاکستان، روسیه</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>تحریم‌ها ادامه دارد — تا اعتمادسازی بین‌المللی سال‌ها طول می‌کشد</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-red-400 mt-1 flex-shrink-0">&#10007;</span>
+              <span>خطر بازگشت دیکتاتوری — تاریخ ایران نشان داده هر انقلابی دیکتاتور جدیدی آورده</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Statehood path -->
+        <div class="bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-green-800 mb-6">مسیر ایالت شدن</h3>
+          <div class="space-y-4 text-green-900">
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>قانون اساسی، دادگاه، بانک مرکزی — <strong>همه از روز اول آماده است</strong></span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>جنگ داخلی غیرممکن — ارتش آمریکا امنیت داخلی را تضمین می‌کند</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>تجزیه غیرممکن — وقتی همه حقوق برابر دارند، کسی نمی‌خواهد جدا شود</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>حمله همسایگان غیرممکن — حمله به ایران = حمله به آمریکا</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>تحریم‌ها یک‌شبه برداشته می‌شوند — ایران بخشی از اقتصاد آمریکا می‌شود</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>بازگشت دیکتاتوری غیرممکن — ساختار قانونی آمریکا ۲۵۰ سال اجازه نداده</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Big stat -->
+      <div class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 md:p-12 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <p class="text-4xl md:text-5xl font-black text-red-400 mb-2">۲۰+ سال</p>
+            <p class="text-gray-400">نهادسازی از صفر</p>
+            <p class="text-sm text-gray-500 mt-1">اگر اصلاً موفق شوید</p>
+          </div>
+          <div class="flex items-center justify-center">
+            <span class="text-gold text-4xl font-black">در مقابل</span>
+          </div>
+          <div>
+            <p class="text-4xl md:text-5xl font-black text-gold mb-2">۱۰ ماه</p>
+            <p class="text-gray-300">مسیر ایالت شدن</p>
+            <p class="text-sm text-gray-400 mt-1">تگزاس همین مسیر را طی کرد</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Biggest Fears Answered -->
+  <section class="bg-navy py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">نگرانی‌ها</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">بزرگ‌ترین نگرانی‌های شما</h2>
+
+      <div class="space-y-8">
+        <div class="bg-white/5 rounded-2xl p-6 md:p-8">
+          <h3 class="text-xl font-black text-gold mb-3">«اگر جنگ داخلی شود؟»</h3>
+          <p class="text-lg text-gray-300 leading-relaxed">
+            در عراق و لیبی جنگ داخلی شد چون هیچ ساختار جایگزینی وجود نداشت. با ایالت شدن، <span class="text-white font-bold">ارتش آمریکا از روز اول امنیت را تضمین می‌کند.</span> هیچ گروه مسلحی نمی‌تواند در برابر ارتش آمریکا بایستد. آلمان و ژاپن پس از جنگ جهانی دوم همین مسیر را طی کردند — بدون یک روز جنگ داخلی.
+          </p>
+        </div>
+
+        <div class="bg-white/5 rounded-2xl p-6 md:p-8">
+          <h3 class="text-xl font-black text-gold mb-3">«اگر کشور تجزیه شود؟»</h3>
+          <p class="text-lg text-gray-300 leading-relaxed">
+            تجزیه‌طلبی از ظلم و نابرابری ناشی می‌شود. وقتی کُرد، بلوچ، آذری و عرب <span class="text-white font-bold">حقوق برابر، زبان آزاد و نمایندگی سیاسی واقعی</span> داشته باشند، انگیزه جدایی از بین می‌رود. آمریکا ۵۰ ایالت با صدها قومیت و زبان دارد — هیچ‌کدام نمی‌خواهند جدا شوند چون حقوقشان تضمین‌شده است.
+          </p>
+        </div>
+
+        <div class="bg-white/5 rounded-2xl p-6 md:p-8">
+          <h3 class="text-xl font-black text-gold mb-3">«اگر همسایه‌ها حمله کنند؟»</h3>
+          <p class="text-lg text-gray-300 leading-relaxed">
+            ایران با ترکیه، عراق، پاکستان و روسیه همسایه است. در دوران انتقال، هر کدام ممکن است فرصت‌طلبی کنند. اما اگر ایران ایالت آمریکا باشد، <span class="text-white font-bold">حمله به ایران = حمله به آمریکا.</span> هیچ کشوری در تاریخ جرأت حمله مستقیم به خاک آمریکا را نداشته. مرزهای ایران تحت حفاظت قوی‌ترین ارتش تاریخ بشر قرار می‌گیرد.
+          </p>
+        </div>
+
+        <div class="bg-white/5 rounded-2xl p-6 md:p-8">
+          <h3 class="text-xl font-black text-gold mb-3">«نفت ما را نمی‌برند؟»</h3>
+          <p class="text-lg text-gray-300 leading-relaxed">
+            الان سپاه ۸۰٪ منابع را تصاحب کرده. با ایالت شدن، <span class="text-white font-bold">مالکیت منابع طبیعی به ایالت و مردم تعلق می‌گیرد</span> — نه دولت فدرال. تگزاس صاحب نفت خودش است. آلاسکا هر سال به هر شهروندش چک سود نفت می‌دهد. ایران می‌تواند همین مدل را اجرا کند.
+          </p>
+        </div>
+
+        <div class="bg-white/5 rounded-2xl p-6 md:p-8">
+          <h3 class="text-xl font-black text-gold mb-3">«فرهنگ و هویت ما چه می‌شود؟»</h3>
+          <p class="text-lg text-gray-300 leading-relaxed">
+            نوروز می‌ماند. فارسی می‌ماند. ایرانی بودن می‌ماند. <span class="text-white font-bold">آمریکا زبان رسمی ندارد.</span> لوئیزیانا هنوز فرانسوی حرف می‌زند. نیومکزیکو هنوز اسپانیایی حرف می‌زند. متمم اول قانون اساسی آمریکا از فرهنگ و هویت شما محافظت می‌کند — نه فقط اجازه می‌دهد، بلکه قانوناً تضمین می‌کند.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Explore -->
+  <section class="bg-navy py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-8 text-center">بیشتر بخوانید</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <a href="/fa/your-rights/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
-          <h3 class="text-xl font-bold text-navy">حقوق شما</h3>
-          <p class="text-gray-text mt-2">قانون اساسی آمریکا به زبان ساده</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">بیشتر بخوانید</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <a href="/fa/your-rights/" class="group border-2 border-white/10 rounded-2xl p-10 hover:border-gold hover:shadow-lg transition-all duration-300 block">
+          <span class="text-gold text-3xl block mb-4">&#9733;</span>
+          <h3 class="text-xl font-black text-white group-hover:text-gold transition-colors">حقوق شما</h3>
+          <p class="text-gray-400 mt-3 leading-relaxed">تمام حقوقی که قانون اساسی آمریکا تضمین می‌کند — به زبان ساده</p>
         </a>
-        <a href="/fa/issues-today/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
-          <h3 class="text-xl font-bold text-navy">مسائل امروز</h3>
-          <p class="text-gray-text mt-2">بحران‌هایی که مردم ایران هر روز باهاشون دست و پنجه نرم می‌کنند</p>
+        <a href="/fa/the-process/" class="group border-2 border-white/10 rounded-2xl p-10 hover:border-gold hover:shadow-lg transition-all duration-300 block">
+          <span class="text-gold text-3xl block mb-4">&#128218;</span>
+          <h3 class="text-xl font-black text-white group-hover:text-gold transition-colors">مسیر ایالت شدن</h3>
+          <p class="text-gray-400 mt-3 leading-relaxed">گام به گام: از رأی‌گیری تا ایالت شدن رسمی</p>
         </a>
-        <a href="/fa/the-process/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
-          <h3 class="text-xl font-bold text-navy">مسیر</h3>
-          <p class="text-gray-text mt-2">چگونه ایالت شدن از نظر قانونی ممکن است</p>
+        <a href="/fa/faq/" class="group border-2 border-white/10 rounded-2xl p-10 hover:border-gold hover:shadow-lg transition-all duration-300 block">
+          <span class="text-gold text-3xl block mb-4">&#10067;</span>
+          <h3 class="text-xl font-black text-white group-hover:text-gold transition-colors">پرسش و پاسخ</h3>
+          <p class="text-gray-400 mt-3 leading-relaxed">پاسخ به همه سؤالات و اعتراضات رایج</p>
         </a>
       </div>
     </div>

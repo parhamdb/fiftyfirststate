@@ -118,14 +118,6 @@ By a **two-to-one margin**, Iranian-Americans describe their religious identity 
 - Only 20% of second-generation marry fellow Iranians
 - Only 21% interact mostly with other Iranians outside work
 
-## Community Organizations
-
-- **PAAIA** (Public Affairs Alliance of Iranian Americans) -- Major advocacy organization; conducts annual National Public Opinion Survey
-- **NIAC** (National Iranian American Council) -- Largest Iranian-American grassroots organization
-- **OIAC** (Organization of Iranian American Communities) -- Supports a free, democratic, secular Iran
-- **IABA** (Iranian American Bar Association)
-- **IAMA** (Iranian American Medical Association)
-
 ---
 
-*Sources: Pew Research Center, PAAIA, Migration Policy Institute, SBA, Wikipedia, Iran Times, Fast Company, IranWire*
+*Sources: Pew Research Center, Migration Policy Institute, SBA, Wikipedia, Iran Times, Fast Company, IranWire*

@@ -1,3 +1,10 @@
 ---
-return Astro.redirect('/en/');
+// Instant redirect — no white flash
 ---
+<html>
+<head>
+  <meta http-equiv="refresh" content="0;url=/en/" />
+  <script is:inline>window.location.href="/en/";</script>
+  <style>html{background:#1B2A4A}</style>
+</head>
+</html>

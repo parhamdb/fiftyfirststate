@@ -7,13 +7,41 @@ import StatCard from '../../components/StatCard.astro';
 
   <!-- Section 1: Hero -->
   <HeroSection
-    headline="The 51st State"
-    subtitle="The strategic, economic, and moral case for Iran joining the United States of America"
+    headline="Iran Should Become the 51st State"
+    subtitle="A serious proposal backed by constitutional law, economic data, and the precedent of 37 territories that already joined the Union."
   />
 
+  <!-- Credibility Bar -->
+  <div class="bg-gray-50 border-b border-gray-200 py-4 px-6">
+    <p class="text-center text-sm text-gray-500 max-w-3xl mx-auto">
+      This is not satire. This is a structured policy proposal examining Iranian statehood through constitutional law, economics, and historical precedent.
+    </p>
+  </div>
+
+  <!-- Farsi CTA Banner -->
+  <a href="/fa/" class="block bg-gradient-to-r from-navy to-navy-light py-4 px-6 text-center hover:from-navy-light hover:to-navy transition-all">
+    <span class="text-gold font-black text-lg">فارسی می‌خوانید؟</span>
+    <span class="text-white font-bold text-lg mx-2">—</span>
+    <span class="text-white font-semibold">صفحه فارسی اینجاست</span>
+    <span class="text-gold ml-2">&#8594;</span>
+  </a>
+
   <!-- Section 2: By the Numbers -->
-  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
-    <h2 class="text-3xl font-bold text-navy mb-12 text-center">By the Numbers</h2>
+  <section class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">The Case in Numbers</p>
+    <h2 class="text-3xl md:text-4xl font-black text-navy mb-16 text-center">Why This Makes Sense</h2>
+
+    <!-- Featured stat -->
+    <div class="max-w-2xl mx-auto mb-8">
+      <StatCard
+        number="$27.3T"
+        unit="in Natural Resources"
+        description="Oil, gas, and mineral wealth that offsets the national debt. 68 minerals including rare earths that break China's monopoly."
+        variant="navy"
+        featured={true}
+      />
+    </div>
+
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <StatCard
         number="208.6B"
@@ -22,75 +50,87 @@ import StatCard from '../../components/StatCard.astro';
         variant="navy"
       />
       <StatCard
-        number="$27.3T"
-        unit="in Natural Resources"
-        description="Oil, gas, and mineral wealth that offsets the national debt. 68 minerals including rare earths that break China's monopoly."
-        variant="white"
-      />
-      <StatCard
         number="$20-50B"
         unit="Saved Per Year"
         description="The US spends this annually on Gulf military bases to contain Iran. As a state, that spending drops to zero."
-        variant="navy"
+        variant="white"
       />
       <StatCard
         number="335K"
         unit="STEM Graduates Per Year"
         description="5th largest producer of STEM talent globally. 70% of Iran's engineering graduates are women."
-        variant="white"
+        variant="navy"
       />
       <StatCard
         number="90M"
         unit="New Citizens"
         description="A consumer market larger than Germany. Massive infrastructure investment. Every dollar stays inside US borders."
-        variant="navy"
+        variant="white"
       />
       <StatCard
         number="29"
         unit="UNESCO World Heritage Sites"
         description="7,000 years of civilization. Persepolis, Isfahan, the tomb of Cyrus the Great. A $10-60B tourism industry."
+        variant="navy"
+      />
+      <StatCard
+        number="0"
+        unit="Nuclear Threat"
+        description="Statehood is the only permanent solution to Iran's nuclear program. No treaty to renegotiate. No sunset clauses."
         variant="white"
       />
     </div>
   </section>
 
-  <!-- Section 3: Why Now -->
-  <section class="bg-gray-bg py-16 md:py-24">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-8">Why Now</h2>
-      <div class="text-lg text-gray-700 leading-relaxed space-y-6">
+  <!-- Section 3: Why Now — with pull quotes -->
+  <section class="bg-navy py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">The Window Is Open</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">Why Now</h2>
+      <div class="space-y-8 text-lg text-gray-300 leading-relaxed">
         <p>
           The Trump administration is actively pursuing territorial expansion, with serious diplomatic efforts aimed at Greenland, Panama, and Canada. The political appetite for growing American sovereignty has not been this strong since the 1950s.
         </p>
+        <blockquote class="border-l-4 border-gold pl-6 py-2 text-2xl md:text-3xl font-black text-white leading-snug">
+          The power vacuum is real and it is growing.
+        </blockquote>
         <p>
-          The Iranian regime is collapsing. Khamenei was killed on February 28, 2026. Iran's proxy network has been systematically destroyed, and the economy is in freefall. The power vacuum is real and it is growing.
+          The Iranian regime is collapsing. Khamenei was killed on February 28, 2026. Iran's proxy network has been systematically destroyed, and the economy is in freefall.
         </p>
         <p>
-          According to the GAMAAN survey, 89% of Iranians support a transition to democracy. The Iranian people are not waiting to be liberated — they are demanding it. A population this aligned with democratic values is an extraordinary strategic opportunity.
+          According to the GAMAAN survey, <span class="text-gold font-bold">89% of Iranians</span> support a transition to democracy. The Iranian people are not waiting to be liberated — they are demanding it.
         </p>
-        <p>
-          The political window for American expansion is the most open it has been since Alaska and Hawaii joined the union. The question is not whether this window will close — it is whether we act before it does.
-        </p>
+        <blockquote class="border-l-4 border-gold pl-6 py-2 text-xl md:text-2xl font-bold text-white leading-snug">
+          The question is not whether this window will close — it is whether we act before it does.
+        </blockquote>
       </div>
     </div>
   </section>
 
   <!-- Section 4: Explore -->
-  <section class="py-16 md:py-24">
+  <section class="py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-8 text-center">Explore</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <a href="/en/why-iran/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
-          <h3 class="text-xl font-bold text-navy">Why Iran?</h3>
-          <p class="text-gray-text mt-2">The strategic and economic case</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">Explore</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <a href="/en/why-iran/" class="group border-2 border-gray-200 rounded-2xl p-10 hover:border-gold hover:shadow-lg transition-all duration-300 block">
+          <span class="text-gold text-3xl block mb-4">&#9733;</span>
+          <h3 class="text-xl font-black text-navy group-hover:text-gold transition-colors">Why Iran?</h3>
+          <p class="text-gray-text mt-3 leading-relaxed">The strategic and economic case for the most consequential act of American self-interest since the Louisiana Purchase.</p>
         </a>
-        <a href="/en/the-process/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
-          <h3 class="text-xl font-bold text-navy">The Process</h3>
-          <p class="text-gray-text mt-2">How statehood works, legally</p>
+        <a href="/en/the-process/" class="group border-2 border-gray-200 rounded-2xl p-10 hover:border-gold hover:shadow-lg transition-all duration-300 block">
+          <span class="text-gold text-3xl block mb-4">&#9878;</span>
+          <h3 class="text-xl font-black text-navy group-hover:text-gold transition-colors">The Process</h3>
+          <p class="text-gray-text mt-3 leading-relaxed">How a sovereign nation becomes an American state. It's happened before — and the Constitution makes it straightforward.</p>
         </a>
-        <a href="/en/our-history/" class="border rounded-xl p-8 hover:border-gold transition-colors block">
-          <h3 class="text-xl font-bold text-navy">Our History</h3>
-          <p class="text-gray-text mt-2">100 years of friendship before 45 years of hostility</p>
+        <a href="/en/our-history/" class="group border-2 border-gray-200 rounded-2xl p-10 hover:border-gold hover:shadow-lg transition-all duration-300 block">
+          <span class="text-gold text-3xl block mb-4">&#128218;</span>
+          <h3 class="text-xl font-black text-navy group-hover:text-gold transition-colors">Our History</h3>
+          <p class="text-gray-text mt-3 leading-relaxed">120 years of friendship before 45 years of hostility. The hostility is between governments, not peoples.</p>
+        </a>
+        <a href="/en/faq/" class="group border-2 border-gray-200 rounded-2xl p-10 hover:border-gold hover:shadow-lg transition-all duration-300 block">
+          <span class="text-gold text-3xl block mb-4">&#10067;</span>
+          <h3 class="text-xl font-black text-navy group-hover:text-gold transition-colors">FAQ</h3>
+          <p class="text-gray-text mt-3 leading-relaxed">Every objection answered with data, law, and the precedent of 37 territories that already joined.</p>
         </a>
       </div>
     </div>

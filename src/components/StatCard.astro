@@ -4,29 +4,35 @@ interface Props {
   unit: string;
   description: string;
   variant?: 'navy' | 'white';
+  featured?: boolean;
 }
 
-const { number, unit, description, variant = 'navy' } = Astro.props;
+const { number, unit, description, variant = 'navy', featured = false } = Astro.props;
 
 const isNavy = variant === 'navy';
 
 const cardClasses = [
-  'rounded-xl p-8 hover:scale-[1.02] transition-transform',
-  isNavy ? 'bg-navy text-white' : 'bg-white text-navy border border-gray-200',
+  'rounded-2xl hover:scale-[1.02] transition-all duration-300',
+  featured ? 'p-10 md:p-12' : 'p-8',
+  isNavy
+    ? 'bg-gradient-to-br from-navy to-navy-light text-white shadow-lg shadow-navy/20'
+    : 'bg-white text-navy border border-gray-200 shadow-sm hover:shadow-md',
 ].join(' ');
 
 const numberClasses = [
-  'text-4xl md:text-5xl font-black',
+  'font-black leading-none',
+  featured ? 'text-5xl md:text-7xl' : 'text-4xl md:text-6xl',
   isNavy ? 'text-gold' : 'text-navy',
 ].join(' ');
 
 const unitClasses = [
-  'text-sm uppercase tracking-widest mt-1',
+  'text-sm uppercase tracking-widest font-semibold',
+  featured ? 'mt-3' : 'mt-2',
   isNavy ? 'text-gray-300' : 'text-gray-text',
 ].join(' ');
 
 const descriptionClasses = [
-  'text-base mt-4 font-normal',
+  'text-base mt-4 font-normal leading-relaxed',
   isNavy ? 'text-gray-300' : 'text-gray-text',
 ].join(' ');
 ---

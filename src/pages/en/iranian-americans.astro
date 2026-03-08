@@ -1,0 +1,253 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import StatCard from '../../components/StatCard.astro';
+---
+<BaseLayout title="Iranian-Americans" lang="en">
+
+  <HeroSection
+    headline="Already American"
+    subtitle="Iranian-Americans are the most educated, most entrepreneurial, and most integrated immigrant community in the United States. The evidence is not theoretical — it is living proof."
+  />
+
+  <!-- Section 1: By the Numbers -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">Demographics</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-16 text-center">By the Numbers</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <StatCard
+          number="1-2M"
+          unit="Iranian-Americans"
+          description="Living across all 50 states. Nearly half in California."
+          variant="navy"
+        />
+        <StatCard
+          number="$97K"
+          unit="Median Household Income"
+          description="vs. $70K national average. 49% of households earn over $100K."
+          variant="white"
+        />
+        <StatCard
+          number="65%"
+          unit="Bachelor's Degree or Higher"
+          description="Double the national average (33%). Highest educational attainment of any ethnic group."
+          variant="navy"
+        />
+        <StatCard
+          number="27%"
+          unit="Master's or Doctoral Degree"
+          description="Nearly triple the national average (11%)."
+          variant="white"
+        />
+        <StatCard
+          number="22%"
+          unit="Self-Employment Rate"
+          description="33,570 active business owners. $2.56 billion in net business income."
+          variant="navy"
+        />
+        <StatCard
+          number="79%"
+          unit="Naturalization Rate"
+          description="Among the highest of any immigrant group. Only 6% unauthorized."
+          variant="white"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Who They Are -->
+  <section class="bg-navy py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">Leadership</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-6 text-center">Running America's Biggest Companies</h2>
+      <p class="text-lg text-gray-300 text-center mb-16 max-w-3xl mx-auto">
+        Iranian-Americans don't just participate in the American economy. They lead it.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div class="bg-white/5 rounded-2xl p-6 text-center">
+          <p class="text-2xl font-black text-gold">Pierre Omidyar</p>
+          <p class="text-gray-300 mt-2">Founded eBay</p>
+          <p class="text-sm text-gray-400 mt-1">Net worth $8B+</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 text-center">
+          <p class="text-2xl font-black text-gold">Dara Khosrowshahi</p>
+          <p class="text-gray-300 mt-2">CEO of Uber</p>
+          <p class="text-sm text-gray-400 mt-1">$144B company</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 text-center">
+          <p class="text-2xl font-black text-gold">Sasan Goodarzi</p>
+          <p class="text-gray-300 mt-2">CEO of Intuit</p>
+          <p class="text-sm text-gray-400 mt-1">$171B company</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 text-center">
+          <p class="text-2xl font-black text-gold">Adam Foroughi</p>
+          <p class="text-gray-300 mt-2">CEO of AppLovin</p>
+          <p class="text-sm text-gray-400 mt-1">$120B company</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white/5 rounded-2xl p-6 text-center">
+          <p class="text-2xl font-black text-gold">Ali Ghodsi</p>
+          <p class="text-gray-300 mt-2">CEO of Databricks</p>
+          <p class="text-sm text-gray-400 mt-1">$62B company</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 text-center">
+          <p class="text-2xl font-black text-gold">Arash Ferdowsi</p>
+          <p class="text-gray-300 mt-2">Co-founded Dropbox</p>
+          <p class="text-sm text-gray-400 mt-1">$10B company</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 text-center">
+          <p class="text-2xl font-black text-gold">Omid Kordestani</p>
+          <p class="text-gray-300 mt-2">Former Chairman of Twitter</p>
+          <p class="text-sm text-gray-400 mt-1">Former SVP of Google</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 text-center">
+          <p class="text-2xl font-black text-gold">Anousheh Ansari</p>
+          <p class="text-gray-300 mt-2">CEO of XPRIZE</p>
+          <p class="text-sm text-gray-400 mt-1">First female private space explorer</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 text-center">
+          <p class="text-2xl font-black text-gold">Patrick Bet-David</p>
+          <p class="text-gray-300 mt-2">Founder of Valuetainment & PHP Agency</p>
+          <p class="text-sm text-gray-400 mt-1">Top business podcast in the world</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Science & Culture -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">Excellence</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">Science, Medicine, Arts, Politics</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="border-2 border-gray-200 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-navy mb-4">Science</h3>
+          <div class="space-y-4 text-gray-700">
+            <p><strong>Maryam Mirzakhani</strong> — Stanford professor. First woman and first Iranian to win the Fields Medal, the "Nobel Prize of mathematics."</p>
+            <p><strong>Firouz Naderi</strong> — Led NASA's Mars Exploration Program. NASA's Distinguished Service Medal.</p>
+            <p><strong>Cumrun Vafa</strong> — Harvard physicist. Breakthrough Prize winner. Pioneer in string theory.</p>
+            <p><strong>Lotfi A. Zadeh</strong> — UC Berkeley. Inventor of fuzzy logic, foundational to modern AI.</p>
+          </div>
+        </div>
+        <div class="border-2 border-gray-200 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-navy mb-4">Medicine</h3>
+          <div class="space-y-4 text-gray-700">
+            <p>Iranian-American physicians grew from <strong>1,625 before 1979</strong> to over <strong>5,045 by 2010</strong>.</p>
+            <p>Heavy concentration in surgery, cardiology, oncology, and ophthalmology.</p>
+            <p><strong>Pardis Sabeti</strong> — Harvard geneticist. TIME 100 Most Influential People.</p>
+          </div>
+        </div>
+        <div class="border-2 border-gray-200 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-navy mb-4">Entertainment</h3>
+          <div class="space-y-4 text-gray-700">
+            <p><strong>Christiane Amanpour</strong> — Chief International Anchor, CNN.</p>
+            <p><strong>Shohreh Aghdashloo</strong> — Academy Award nominee, Emmy winner.</p>
+            <p><strong>Nasim Pedrad</strong> — Saturday Night Live cast member.</p>
+            <p><strong>Andre Agassi</strong> — 8 Grand Slam titles, Olympic gold. Father represented Iran in boxing.</p>
+          </div>
+        </div>
+        <div class="border-2 border-gray-200 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-navy mb-4">Politics</h3>
+          <div class="space-y-4 text-gray-700">
+            <p><strong>Stephanie Bice</strong> — First Iranian-American elected to Congress (Oklahoma, 2020).</p>
+            <p><strong>Yassamin Ansari</strong> — Second Iranian-American in Congress (Arizona, 2024).</p>
+            <p><strong>Jimmy Delshad</strong> — First Iranian-born Mayor of Beverly Hills (2007).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Integration -->
+  <section class="bg-navy py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">Integration</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">Fully Integrated, Deeply American</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white/5 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-gold mb-4">Religious Diversity</h3>
+          <p class="text-gray-300 mb-4">Iranian-Americans are among the most religiously diverse immigrant communities:</p>
+          <div class="space-y-2 text-gray-300">
+            <div class="flex justify-between"><span>Muslim</span><span class="text-white font-bold">31%</span></div>
+            <div class="flex justify-between"><span>Atheist / Agnostic / Humanist</span><span class="text-white font-bold">19%</span></div>
+            <div class="flex justify-between"><span>Baha'i</span><span class="text-white font-bold">7%</span></div>
+            <div class="flex justify-between"><span>Jewish</span><span class="text-white font-bold">5%</span></div>
+            <div class="flex justify-between"><span>Christian</span><span class="text-white font-bold">7%</span></div>
+            <div class="flex justify-between"><span>Zoroastrian</span><span class="text-white font-bold">2%</span></div>
+            <div class="flex justify-between"><span>Other / unspecified</span><span class="text-white font-bold">29%</span></div>
+          </div>
+          <p class="text-sm text-gray-400 mt-4">By a 2-to-1 margin, Iranian-Americans describe their religious identity as "not very strong."</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-8">
+          <h3 class="text-xl font-black text-gold mb-4">Cultural Integration</h3>
+          <div class="space-y-4 text-gray-300">
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>79% naturalization rate — among the highest of any immigrant group</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>Only 6% unauthorized — almost entirely legal immigration</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>80% of second-generation marry outside the Iranian community</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>79% interact primarily with non-Iranians outside work</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-gold mt-1 flex-shrink-0">&#10003;</span>
+              <span>Very high English proficiency across all generations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <blockquote class="border-l-4 border-gold pl-6 py-2 text-2xl font-black text-white leading-snug my-8">
+        Iranian-Americans don't form enclaves. They become Americans — while keeping their heritage. This is the pattern statehood would replicate at scale.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Section 5: Tehrangeles -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">Community</p>
+      <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">Tehrangeles</h2>
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p>
+          The Persian community across Westwood, Beverly Hills, Century City, Encino, and Woodland Hills in Los Angeles is the largest Iranian community outside Iran. The intersection of Westwood Blvd and Wilkins Ave was officially designated <strong>"Persian Square"</strong> by the City of Los Angeles.
+        </p>
+        <p>
+          Approximately <strong>20% of Beverly Hills' population is Iranian</strong>. Two Iranian-Americans have served as mayor. The community is so woven into the fabric of Los Angeles that it has its own informal name: <em>Tehrangeles</em>.
+        </p>
+        <blockquote class="not-italic border-l-4 border-gold pl-6 my-8 text-xl font-bold text-navy">
+          This is not a hypothesis about whether Iranians can integrate into American life. It is a decades-long, data-verified fact.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-navy py-20 md:py-28">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <p class="text-lg text-gray-300 mb-6">The question is not whether Iranians and Americans can live together. They already do.</p>
+      <a
+        href="/en/the-process/"
+        class="inline-block bg-gold text-navy font-black text-lg px-10 py-5 rounded-xl hover:bg-gold-light transition-colors shadow-lg shadow-gold/20"
+      >
+        How statehood actually works
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>

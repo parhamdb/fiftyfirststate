@@ -10,32 +10,34 @@ const { lang } = Astro.props;
 const navLinks = lang === 'en'
   ? [
       { label: 'Why Iran', href: '/en/why-iran/' },
+      { label: 'Iranian-Americans', href: '/en/iranian-americans/' },
       { label: 'The Process', href: '/en/the-process/' },
       { label: 'Our History', href: '/en/our-history/' },
-      { label: 'Research', href: '/en/research/' },
+      { label: 'FAQ', href: '/en/faq/' },
       { label: 'About', href: '/en/about/' },
     ]
   : [
       { label: 'حقوق شما', href: '/fa/your-rights/' },
-      { label: 'مسائل امروز', href: '/fa/issues-today/' },
       { label: 'مسیر', href: '/fa/the-process/' },
+      { label: 'پرسش و پاسخ', href: '/fa/faq/' },
     ];
 ---
 
-<header class="sticky top-0 bg-white border-b border-gray-200 z-50">
+<header class="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
+    <div class="flex items-center justify-between h-[72px]">
       <!-- Logo -->
-      <a href={`/${lang}/`} class="text-navy font-bold text-xl tracking-wide">
-        IRAN 51
+      <a href={`/${lang}/`} class="flex items-center gap-2 group">
+        <span class="text-gold text-xl">&#9733;</span>
+        <span class="text-navy font-black text-xl tracking-wider group-hover:text-navy-light transition-colors">IRAN 51</span>
       </a>
 
       <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-6">
+      <nav class="hidden md:flex items-center gap-8">
         {navLinks.map((link) => (
           <a
             href={link.href}
-            class="text-navy hover:text-gold transition-colors text-sm font-medium"
+            class="text-navy hover:text-gold transition-colors text-sm font-semibold tracking-wide"
           >
             {link.label}
           </a>
@@ -43,18 +45,21 @@ const navLinks = lang === 'en'
         <LanguageSwitcher />
       </nav>
 
-      <!-- Mobile hamburger -->
-      <button
-        id="menu-toggle"
-        class="md:hidden p-2 text-navy"
-        aria-label="Toggle menu"
-        aria-expanded="false"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+      <!-- Mobile: language switch + hamburger always visible -->
+      <div class="flex md:hidden items-center gap-3">
+        <LanguageSwitcher />
+        <button
+          id="menu-toggle"
+          class="p-2 text-navy"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Mobile nav -->
@@ -63,14 +68,11 @@ const navLinks = lang === 'en'
         {navLinks.map((link) => (
           <a
             href={link.href}
-            class="text-navy hover:text-gold transition-colors text-sm font-medium py-1"
+            class="text-navy hover:text-gold transition-colors text-sm font-semibold py-1"
           >
             {link.label}
           </a>
         ))}
-        <div class="pt-2">
-          <LanguageSwitcher />
-        </div>
       </div>
     </nav>
   </div>

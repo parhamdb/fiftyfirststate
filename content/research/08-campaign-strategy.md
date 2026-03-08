@@ -129,14 +129,6 @@ Advocating for Iran to become a US state is **fully protected political speech**
 - Set milestone goals: 1,000 / 10,000 / 100,000 signatures
 - Each milestone = a press-worthy moment
 
-### Organizational Partnerships
-Approach carefully -- established orgs may not formally endorse but individuals may engage:
-- **PAAIA**: Nonpartisan civic engagement focus
-- **NIAC**: Largest grassroots org
-- **OIAC**: Focused on free/democratic Iran
-- University Persian/Iranian Student Associations
-- Iranian-American professional associations
-
 ## Technical Stack
 
 ### Recommended Architecture

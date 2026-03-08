@@ -2,30 +2,17 @@
 const currentPath = Astro.url.pathname;
 const isFarsi = currentPath.startsWith('/fa/') || currentPath === '/fa';
 
-// Smart URL mapping
-function getTargetUrl(): string {
-  if (isFarsi) {
-    // Farsi -> English mappings
-    if (currentPath === '/fa/' || currentPath === '/fa') return '/en/';
-    if (currentPath.startsWith('/fa/the-process')) return '/en/the-process/';
-    // All other Farsi pages -> English home
-    return '/en/';
-  } else {
-    // English -> Farsi mappings
-    if (currentPath === '/en/' || currentPath === '/en') return '/fa/';
-    if (currentPath.startsWith('/en/the-process')) return '/fa/the-process/';
-    // All other English pages -> Farsi home
-    return '/fa/';
-  }
-}
-
-const targetUrl = getTargetUrl();
+const targetUrl = isFarsi ? '/en/' : '/fa/';
 const label = isFarsi ? 'English' : 'فارسی';
 ---
 
 <a
   href={targetUrl}
-  class="inline-block border border-gray-300 rounded px-3 py-1 text-sm hover:bg-gray-100 transition-colors"
+  class="inline-flex items-center gap-1.5 bg-gold text-navy font-bold text-sm px-4 py-2 rounded-lg hover:bg-gold-light transition-colors shadow-sm"
 >
+  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8M12 3c2.2 2.6 3.4 5.6 3.4 9s-1.2 6.4-3.4 9c-2.2-2.6-3.4-5.6-3.4-9s1.2-6.4 3.4-9z" />
+  </svg>
   {label}
 </a>

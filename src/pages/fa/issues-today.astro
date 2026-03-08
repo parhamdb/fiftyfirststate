@@ -6,17 +6,18 @@ import StatCard from '../../components/StatCard.astro';
 <BaseLayout title="مسائل امروز" lang="fa">
 
   <HeroSection
-    headline="بحران‌های ایران"
-    subtitle="آمار دروغ نمی‌گوید"
+    headline="هر بحران، یک راه‌حل مشخص"
+    subtitle="مشکلات ایران بی‌سابقه نیست. آمریکا برای هر کدام نهاد، قانون و ساختار مشخصی دارد."
     lang="fa"
   />
 
   <!-- 1. بحران اقتصادی -->
-  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
-    <h2 class="text-3xl font-bold text-navy mb-12 text-center">بحران اقتصادی</h2>
+  <section class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">اقتصاد</p>
+    <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">بحران اقتصادی</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
       <StatCard
-        number="٪۴۸"
+        number="۴۸٪"
         unit="تورم"
         description="هر روز همه چیز گران‌تر می‌شود."
         variant="navy"
@@ -28,164 +29,245 @@ import StatCard from '../../components/StatCard.astro';
         variant="white"
       />
       <StatCard
-        number="٪۳۸.۸"
+        number="۳۸.۸٪"
         unit="زیر خط فقر"
         description="از هر ۳ ایرانی، بیش از ۱ نفر زیر خط فقر زندگی می‌کند."
         variant="navy"
       />
     </div>
-    <div class="prose prose-lg max-w-none text-gray-700">
+    <div class="prose prose-lg max-w-none text-gray-700 mb-10">
       <p>
-        تحریم‌ها اقتصاد را فلج کرده. فرار مغزها هر سال ۵۰ تا ۷۰ میلیارد دلار ضرر می‌زند. ۸۰٪ دانشجوهای پزشکی می‌خواهند بروند. هیچ سرمایه‌گذار خارجی نمی‌آید و تورم هر روز زندگی را سخت‌تر می‌کند.
+        تحریم‌ها اقتصاد را فلج کرده. فرار مغزها هر سال ۵۰ تا ۷۰ میلیارد دلار ضرر می‌زند. ۸۰٪ دانشجویان پزشکی می‌خواهند بروند. هیچ سرمایه‌گذار خارجی نمی‌آید و تورم هر روز زندگی را سخت‌تر می‌کند.
       </p>
+    </div>
+    <!-- Solution -->
+    <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-6 md:p-8">
+      <h3 class="text-xl font-black text-green-800 mb-4 flex items-center gap-2">
+        <span class="text-gold">&#9733;</span> راه‌حل ایالت شدن
+      </h3>
+      <div class="space-y-3 text-green-900">
+        <p><strong>دلار آمریکا</strong> جای ریال — تورم ۴۸٪ به ۲-۳٪ کاهش می‌یابد. فدرال رزرو ثبات پولی را تضمین می‌کند.</p>
+        <p><strong>تحریم‌ها یک‌شبه برداشته می‌شوند</strong> — ایران بخشی از بزرگ‌ترین اقتصاد جهان می‌شود. سرمایه‌گذاری خارجی سرازیر می‌شود.</p>
+        <p><strong>FDIC</strong> سپرده‌های بانکی را تا ۲۵۰,۰۰۰ دلار بیمه می‌کند. هیچ نهادی نمی‌تواند به پول شما دست بزند.</p>
+        <p><strong>فرار مغزها متوقف می‌شود</strong> — وقتی پاسپورت آمریکایی داشته باشید، دیگر نیازی به فرار نیست.</p>
+      </div>
     </div>
   </section>
 
   <!-- 2. حقوق بشر -->
-  <section class="bg-gray-bg py-16 md:py-24">
+  <section class="bg-navy py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">حقوق بشر</h2>
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">حقوق بشر</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">حقوق بشر</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
         <StatCard
           number="+۲,۲۲۸"
           unit="اعدام در ۲۰۲۵"
           description="بیشترین نرخ اعدام سرانه در جهان."
-          variant="navy"
+          variant="white"
         />
         <StatCard
           number="+۷,۰۰۰"
           unit="کشته در اعتراضات ژانویه ۲۰۲۶"
           description="نیروهای امنیتی مردم را به گلوله بستند."
-          variant="navy"
+          variant="white"
         />
       </div>
-      <div class="prose prose-lg max-w-none text-gray-700">
+      <div class="text-lg text-gray-300 leading-relaxed mb-10">
         <p>
-          هزاران زندانی سیاسی پشت میله‌ها هستند. اعتراض کنی، گلوله می‌خوری. شکنجه و اعتراف اجباری عادی شده. دادگاه انقلاب بدون وکیل و بدون هیئت منصفه حکم می‌دهد.
+          هزاران زندانی سیاسی پشت میله‌ها هستند. اعتراض کنید، با گلوله پاسخ می‌دهند. شکنجه و اعتراف اجباری به رویه‌ای عادی تبدیل شده است. دادگاه‌های انقلاب بدون حضور وکیل و هیئت منصفه حکم صادر می‌کنند.
         </p>
+      </div>
+      <!-- Solution -->
+      <div class="bg-green-900/30 border-2 border-green-500/30 rounded-2xl p-6 md:p-8">
+        <h3 class="text-xl font-black text-gold mb-4 flex items-center gap-2">
+          <span>&#9733;</span> راه‌حل ایالت شدن
+        </h3>
+        <div class="space-y-3 text-gray-200">
+          <p><strong class="text-white">متمم هشتم قانون اساسی:</strong> شکنجه و مجازات‌های بی‌رحمانه ممنوع است. اعدام برای جرائم سیاسی وجود ندارد.</p>
+          <p><strong class="text-white">متمم پنجم و ششم:</strong> حق سکوت، حق وکیل، محاکمه سریع و علنی با هیئت منصفه. هیچ‌کس بدون حکم دادگاه بازداشت نمی‌شود.</p>
+          <p><strong class="text-white">دادگاه‌های فدرال</strong> جای دادگاه‌های انقلاب — قاضی‌های مستقل، نه قاضی‌های حکومتی.</p>
+          <p><strong class="text-white">متمم اول:</strong> حق اعتراض، تظاهرات و تجمع — دولت حق سرکوب ندارد.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- 3. حقوق زنان -->
-  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
-    <h2 class="text-3xl font-bold text-navy mb-12 text-center">حقوق زنان</h2>
-    <div class="prose prose-lg max-w-none text-gray-700">
+  <section class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">تبعیض</p>
+    <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">حقوق زنان</h2>
+    <div class="prose prose-lg max-w-none text-gray-700 mb-10">
       <p>
-        شهادت زن نصف مرد ارزش دارد. ارث زن نصف مرد است. بی‌حجابی تا ۱۵ سال زندان دارد. دختر ۱۳ ساله می‌تواند شوهر داده شود. زن بدون اجازه شوهر نمی‌تواند از کشور خارج شود. طلاق فقط دست مرد است.
+        شهادت زن نصف مرد ارزش دارد. ارث زن نصف مرد است. بی‌حجابی تا ۱۵ سال زندان دارد. دختر ۱۳ ساله می‌تواند شوهر داده شود. زن بدون اجازه شوهر نمی‌تواند از کشور خارج شود. حق طلاق تقریباً به‌طور کامل در اختیار مرد است.
       </p>
-      <p>
-        اینها تبعیض تصادفی نیست — در قانون نوشته شده و دادگاه‌ها اجرایش می‌کنند.
-      </p>
+    </div>
+    <!-- Solution -->
+    <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-6 md:p-8">
+      <h3 class="text-xl font-black text-green-800 mb-4 flex items-center gap-2">
+        <span class="text-gold">&#9733;</span> راه‌حل ایالت شدن
+      </h3>
+      <div class="space-y-3 text-green-900">
+        <p><strong>متمم چهاردهم (حمایت برابر):</strong> هیچ ایالتی نمی‌تواند قانونی تصویب کند که بین زن و مرد تبعیض قائل شود.</p>
+        <p><strong>متمم نوزدهم:</strong> حق رأی برابر زنان — از سال ۱۹۲۰ تضمین شده.</p>
+        <p><strong>Civil Rights Act 1964:</strong> تبعیض جنسیتی در استخدام، آموزش و خدمات عمومی غیرقانونی است.</p>
+        <p><strong>هیچ قانون پوششی وجود ندارد</strong> — هر کسی هر چه بخواهد می‌پوشد. دولت حق دخالت ندارد.</p>
+      </div>
     </div>
   </section>
 
   <!-- 4. آزادی مذهب -->
-  <section class="bg-gray-bg py-16 md:py-24">
+  <section class="bg-navy py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">آزادی مذهب</h2>
-      <div class="overflow-x-auto">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">سرکوب</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">آزادی مذهب</h2>
+      <div class="overflow-x-auto mb-10">
         <table class="w-full text-right border-collapse">
           <thead>
-            <tr class="border-b-2 border-navy">
-              <th class="py-4 px-6 text-navy font-bold text-lg">گروه</th>
-              <th class="py-4 px-6 text-navy font-bold text-lg">جمعیت تخمینی</th>
-              <th class="py-4 px-6 text-navy font-bold text-lg">وضعیت</th>
+            <tr class="border-b-2 border-gold">
+              <th class="py-4 px-6 text-gold font-black text-lg">گروه</th>
+              <th class="py-4 px-6 text-gold font-black text-lg">جمعیت تخمینی</th>
+              <th class="py-4 px-6 text-gold font-black text-lg">وضعیت</th>
             </tr>
           </thead>
-          <tbody class="text-gray-700">
-            <tr class="border-b border-gray-200">
-              <td class="py-4 px-6 font-bold">بهائیان</td>
+          <tbody class="text-gray-300">
+            <tr class="border-b border-white/10">
+              <td class="py-4 px-6 font-bold text-white">بهائیان</td>
               <td class="py-4 px-6">۳۰۰,۰۰۰</td>
               <td class="py-4 px-6">حق دانشگاه رفتن ندارند، اموالشان مصادره می‌شود، زندانی می‌شوند</td>
             </tr>
-            <tr class="border-b border-gray-200">
-              <td class="py-4 px-6 font-bold">مسیحیان</td>
+            <tr class="border-b border-white/10">
+              <td class="py-4 px-6 font-bold text-white">مسیحیان</td>
               <td class="py-4 px-6">۳۰۰,۰۰۰ — ۵۰۰,۰۰۰</td>
               <td class="py-4 px-6">بازداشت، کلیساها بسته شده، تبلیغ دین ممنوع</td>
             </tr>
-            <tr class="border-b border-gray-200">
-              <td class="py-4 px-6 font-bold">سنی‌ها</td>
+            <tr class="border-b border-white/10">
+              <td class="py-4 px-6 font-bold text-white">سنی‌ها</td>
               <td class="py-4 px-6">۵ — ۱۰ میلیون</td>
               <td class="py-4 px-6">در تهران با ۹ میلیون جمعیت حتی یک مسجد سنی نیست</td>
             </tr>
             <tr>
-              <td class="py-4 px-6 font-bold">زرتشتیان</td>
+              <td class="py-4 px-6 font-bold text-white">زرتشتیان</td>
               <td class="py-4 px-6">۲۵,۰۰۰</td>
               <td class="py-4 px-6">تبعیض شغلی و اجتماعی</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <!-- Solution -->
+      <div class="bg-green-900/30 border-2 border-green-500/30 rounded-2xl p-6 md:p-8">
+        <h3 class="text-xl font-black text-gold mb-4 flex items-center gap-2">
+          <span>&#9733;</span> راه‌حل ایالت شدن
+        </h3>
+        <div class="space-y-3 text-gray-200">
+          <p><strong class="text-white">متمم اول (Establishment Clause):</strong> دولت حق ندارد دین رسمی تعیین کند. جدایی کامل دین از حکومت.</p>
+          <p><strong class="text-white">متمم اول (Free Exercise Clause):</strong> هر کسی حق دارد هر دینی داشته باشد — یا هیچ دینی. ارتداد مفهومی قانونی ندارد.</p>
+          <p><strong class="text-white">Religious Freedom Restoration Act (RFRA):</strong> دولت فدرال نمی‌تواند آزادی مذهبی را محدود کند مگر در شرایط بسیار استثنایی.</p>
+          <p><strong class="text-white">بهائیان، مسیحیان، سنی‌ها، زرتشتیان</strong> — همه تحت حمایت کامل قانون فدرال قرار می‌گیرند. مصادره اموال و تبعیض شغلی بر اساس دین غیرقانونی است.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- 5. اقلیت‌های قومی -->
-  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
-    <h2 class="text-3xl font-bold text-navy mb-12 text-center">اقلیت‌های قومی</h2>
-    <div class="prose prose-lg max-w-none text-gray-700">
+  <section class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">اقلیت‌ها</p>
+    <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">اقلیت‌های قومی</h2>
+    <div class="prose prose-lg max-w-none text-gray-700 mb-10">
       <p>
-        ۹۷٪ اعدام‌های سیاسی کُردها، بلوچ‌ها و عرب‌ها هستند. بعد از اعتراضات ژوئن ۲۰۲۵، بیش از ۲۱ هزار نفر دستگیر شدند. قانون اساسی خود ایران حق تدریس به زبان مادری را داده — ولی هرگز اجرا نشده.
+        ۹۷٪ اعدام‌های سیاسی مربوط به کُردها، بلوچ‌ها و عرب‌هاست. بعد از اعتراضات ژوئن ۲۰۲۵، بیش از ۲۱ هزار نفر دستگیر شدند. قانون اساسی خود ایران حق تدریس به زبان مادری را پیش‌بینی کرده است، اما هرگز اجرا نشده است.
       </p>
-      <p>
-        کردی، ترکی آذری، بلوچی و عربی در مدارس ممنوع است. فعالان اقلیت‌ها را به جرم «محاربه» اعدام می‌کنند.
-      </p>
+    </div>
+    <!-- Solution -->
+    <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-6 md:p-8">
+      <h3 class="text-xl font-black text-green-800 mb-4 flex items-center gap-2">
+        <span class="text-gold">&#9733;</span> راه‌حل ایالت شدن
+      </h3>
+      <div class="space-y-3 text-green-900">
+        <p><strong>متمم چهاردهم (Equal Protection):</strong> هیچ ایالتی نمی‌تواند حقوق شهروندان را بر اساس نژاد یا قومیت محدود کند.</p>
+        <p><strong>آمریکا زبان رسمی ندارد.</strong> فارسی، کردی، ترکی آذری، بلوچی و عربی آزادند. نیومکزیکو هنوز به اسپانیایی اداره می‌شود.</p>
+        <p><strong>Voting Rights Act 1965:</strong> تبعیض در رأی‌گیری بر اساس قومیت غیرقانونی است. هر شهروندی حق رأی دارد.</p>
+        <p><strong>هر شهروند</strong> می‌تواند نماینده، فرماندار یا رئیس‌جمهور شود — فرقی نمی‌کند کُرد باشید، بلوچ یا عرب.</p>
+      </div>
     </div>
   </section>
 
   <!-- 6. فساد -->
-  <section class="bg-gray-bg py-16 md:py-24">
+  <section class="bg-navy py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-navy mb-12 text-center">فساد</h2>
-      <div class="prose prose-lg max-w-none text-gray-700">
-        <ul class="space-y-4 list-none pr-0">
-          <li class="flex items-start gap-3">
-            <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
-            <span>سپاه بیش از ۸۰٪ دارایی‌های «خصوصی‌سازی» شده را برداشته.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
-            <span>دفتر خامنه‌ای ۹۵ میلیارد دلار دارایی داشت.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
-            <span>رتبه شفافیت: ۱۵۱ از ۱۸۰ کشور</span>
-          </li>
-        </ul>
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">فساد سیستمی</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-12 text-center">فساد</h2>
+      <div class="space-y-6 text-lg text-gray-300 mb-10">
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+          <span>سپاه بیش از ۸۰٪ دارایی‌های خصوصی‌سازی‌شده را تصاحب کرده است.</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+          <span>دفتر خامنه‌ای ۹۵ میلیارد دلار دارایی داشت.</span>
+        </div>
+        <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5">
+          <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+          <span>رتبه شفافیت: ۱۵۱ از ۱۸۰ کشور</span>
+        </div>
+      </div>
+      <!-- Solution -->
+      <div class="bg-green-900/30 border-2 border-green-500/30 rounded-2xl p-6 md:p-8">
+        <h3 class="text-xl font-black text-gold mb-4 flex items-center gap-2">
+          <span>&#9733;</span> راه‌حل ایالت شدن
+        </h3>
+        <div class="space-y-3 text-gray-200">
+          <p><strong class="text-white">FBI و وزارت دادگستری آمریکا:</strong> تحقیق و پیگرد فساد مقامات — بدون تأثیرپذیری از قدرت سیاسی محلی.</p>
+          <p><strong class="text-white">SEC (کمیسیون بورس):</strong> نظارت بر بازارهای مالی. هیچ نهاد نظامی حق فعالیت اقتصادی ندارد.</p>
+          <p><strong class="text-white">Freedom of Information Act (FOIA):</strong> هر شهروندی حق دارد اسناد دولتی را ببیند. شفافیت اجباری است.</p>
+          <p><strong class="text-white">سپاه منحل می‌شود.</strong> هیچ نیروی نظامی در آمریکا حق فعالیت تجاری ندارد. Posse Comitatus Act استفاده از ارتش علیه شهروندان را ممنوع می‌کند.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- 7. محیط زیست -->
-  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
-    <h2 class="text-3xl font-bold text-navy mb-12 text-center">محیط زیست</h2>
-    <div class="prose prose-lg max-w-none text-gray-700">
-      <ul class="space-y-4 list-none pr-0">
-        <li class="flex items-start gap-3">
-          <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
-          <span>دریاچه ارومیه ۹۵٪ خشک شده است.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
-          <span>تهران آلوده‌ترین شهر جهان</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
-          <span>بیش از ۴۰ شهر آب جیره‌بندی شده.</span>
-        </li>
-      </ul>
+  <section class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold text-center mb-3">محیط زیست</p>
+    <h2 class="text-3xl md:text-4xl font-black text-navy mb-12 text-center">محیط زیست</h2>
+    <div class="space-y-6 text-lg text-gray-700 mb-10">
+      <div class="flex items-start gap-4 border-2 border-gray-200 rounded-xl p-5">
+        <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+        <span>دریاچه ارومیه ۹۵٪ خشک شده است.</span>
+      </div>
+      <div class="flex items-start gap-4 border-2 border-gray-200 rounded-xl p-5">
+        <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+        <span>تهران یکی از آلوده‌ترین شهرهای جهان است.</span>
+      </div>
+      <div class="flex items-start gap-4 border-2 border-gray-200 rounded-xl p-5">
+        <span class="text-gold text-xl mt-0.5 flex-shrink-0">&#9679;</span>
+        <span>بیش از ۴۰ شهر آب جیره‌بندی شده.</span>
+      </div>
+    </div>
+    <!-- Solution -->
+    <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-6 md:p-8">
+      <h3 class="text-xl font-black text-green-800 mb-4 flex items-center gap-2">
+        <span class="text-gold">&#9733;</span> راه‌حل ایالت شدن
+      </h3>
+      <div class="space-y-3 text-green-900">
+        <p><strong>EPA (سازمان حفاظت محیط زیست):</strong> استانداردهای فدرال کیفیت هوا و آب — قابل اجرا با ضمانت قانونی.</p>
+        <p><strong>Clean Air Act و Clean Water Act:</strong> آلودگی صنعتی تحت کنترل شدید قرار می‌گیرد. جریمه‌های سنگین برای آلوده‌کنندگان.</p>
+        <p><strong>Bureau of Reclamation:</strong> مدیریت فدرال منابع آبی — همان نهادی که دریاچه‌های خشک‌شده آمریکا را احیا کرده.</p>
+        <p><strong>FEMA:</strong> واکنش سریع به بلایای طبیعی — خشکسالی، زلزله، سیل.</p>
+      </div>
     </div>
   </section>
 
-  <!-- CTA: راه حل وجود دارد -->
-  <section class="bg-navy py-16 md:py-24">
+  <!-- CTA -->
+  <section class="bg-navy py-20 md:py-28">
     <div class="max-w-3xl mx-auto px-6 text-center">
-      <p class="text-3xl font-bold text-white mb-6">یک راه‌حل هست.</p>
+      <p class="text-3xl font-black text-white mb-4">قانون، نهاد و ساختار وجود دارد.</p>
+      <p class="text-lg text-gray-300 mb-8">فقط باید از آن استفاده کرد.</p>
       <a
-        href="/fa/your-rights/"
-        class="inline-block bg-gold text-navy font-bold text-lg px-8 py-4 rounded-lg hover:bg-gold-light transition-colors"
+        href="/fa/the-process/"
+        class="inline-block bg-gold text-navy font-black text-lg px-10 py-5 rounded-xl hover:bg-gold-light transition-colors shadow-lg shadow-gold/20"
       >
-        حقوق شما تحت قانون اساسی آمریکا
+        مسیر تبدیل شدن به ایالت
       </a>
     </div>
   </section>
