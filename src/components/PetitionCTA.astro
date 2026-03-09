@@ -1,0 +1,53 @@
+---
+interface Props {
+  lang?: 'en' | 'fa';
+}
+
+const { lang = 'en' } = Astro.props;
+
+const content = lang === 'fa'
+  ? {
+      eyebrow: 'اقدام بعدی',
+      title: 'دادخواست را امضا کنید',
+      body: 'دادخواست Change.org اکنون زنده است. اگر با این مسیر موافقید، نام خود را ثبت کنید و این کمپین را یک قدم جلو ببرید.',
+      primary: 'امضای دادخواست',
+      primaryHref: 'https://www.change.org/iran51state',
+      secondary: 'فعلاً این مسیر را بخوانید',
+      secondaryHref: '/fa/the-process/',
+    }
+  : {
+      eyebrow: 'Next Step',
+      title: 'Sign the Petition',
+      body: 'The Change.org petition is now live. If you support this path, add your name and help move the campaign forward.',
+      primary: 'Sign the Petition',
+      primaryHref: 'https://www.change.org/iran51state',
+      secondary: 'Read the case first',
+      secondaryHref: '/en/why-iran/',
+    };
+---
+
+<section class="py-10 md:py-14">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="rounded-3xl bg-gradient-to-br from-navy to-navy-light p-8 md:p-10 text-center shadow-xl shadow-navy/15">
+      <p class="text-sm uppercase tracking-[0.2em] text-gold font-bold mb-3">{content.eyebrow}</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white">{content.title}</h2>
+      <p class="text-lg text-gray-300 leading-relaxed mt-4 max-w-2xl mx-auto">{content.body}</p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href={content.primaryHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center min-w-[240px] rounded-xl bg-gold px-6 py-4 text-base font-black text-navy shadow-lg shadow-gold/20 hover:bg-gold-light transition-colors"
+        >
+          {content.primary}
+        </a>
+        <a
+          href={content.secondaryHref}
+          class="inline-flex items-center justify-center min-w-[240px] rounded-xl border-2 border-white/20 px-6 py-4 text-base font-bold text-white hover:border-gold hover:text-gold transition-colors"
+        >
+          {content.secondary}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

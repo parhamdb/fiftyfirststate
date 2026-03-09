@@ -3,11 +3,15 @@ const currentPath = Astro.url.pathname;
 const isFarsi = currentPath.startsWith('/fa/') || currentPath === '/fa';
 
 const targetUrl = isFarsi ? '/en/' : '/fa/';
-const label = isFarsi ? 'English' : 'فارسی';
+const label = isFarsi ? 'For Americans' : 'برای ایرانیان';
+const ariaLabel = isFarsi
+  ? 'Switch to the American audience site'
+  : 'رفتن به نسخه مخصوص مخاطب ایرانی';
 ---
 
 <a
   href={targetUrl}
+  aria-label={ariaLabel}
   class="inline-flex items-center gap-1.5 bg-gold text-navy font-bold text-sm px-4 py-2 rounded-lg hover:bg-gold-light transition-colors shadow-sm"
 >
   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
